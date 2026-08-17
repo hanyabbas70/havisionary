@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>پرائیویسی پالیسی | Spectra Flashlight</title>
+<style>
+  :root{
+    --bg:#0f1720;
+    --panel:#ffffff;
+    --accent:#2563eb;
+    --accent-light:#eef4ff;
+    --text:#1f2937;
+    --muted:#6b7280;
+    --border:#e5e7eb;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:linear-gradient(180deg,#0f1720 0%, #1e293b 260px, #f3f4f6 260px);
+    color:var(--text);
+    line-height:1.65;
+    text-align: right;
+  }
+  header{
+    max-width:900px;
+    margin:0 auto;
+    padding:56px 24px 40px;
+    color:#fff;
+    text-align:center;
+  }
+  header .badge{
+    display:inline-block;
+    background:rgba(255,255,255,0.12);
+    padding:6px 16px;
+    border-radius:999px;
+    font-size:13px;
+    letter-spacing:.03em;
+    margin-bottom:16px;
+  }
+  header h1{
+    font-size:32px;
+    margin:0 0 10px;
+    font-weight:700;
+  }
+  header p{
+    color:#cbd5e1;
+    margin:0;
+    font-size:15px;
+  }
+  .container{
+    max-width:900px;
+    margin:-40px auto 60px;
+    background:var(--panel);
+    border-radius:16px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.12);
+    padding:0;
+    overflow:hidden;
+  }
+  .toc{
+    background:var(--accent-light);
+    padding:28px 32px;
+    border-bottom:1px solid var(--border);
+  }
+  .toc h2{
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    color:var(--accent);
+    margin:0 0 14px;
+  }
+  .toc ol{
+    margin:0;
+    padding-right:20px;
+  }
+  .toc li{
+    margin-bottom:8px;
+    font-size:14.5px;
+  }
+  .toc a{
+    color:var(--text);
+    text-decoration:none;
+  }
+  .toc a:hover{
+    color:var(--accent);
+    text-decoration:underline;
+  }
+  main{
+    padding:36px 40px 50px;
+  }
+  section{
+    margin-bottom:36px;
+  }
+  section h2{
+    font-size:20px;
+    color:#111827;
+    border-right:4px solid var(--accent);
+    padding-right:12px;
+    margin:0 0 14px;
+  }
+  section h3{
+    font-size:15.5px;
+    color:var(--accent);
+    margin:20px 0 6px;
+  }
+  p{
+    margin:0 0 12px;
+    color:#374151;
+    font-size:15px;
+  }
+  a.inline{
+    color:var(--accent);
+    text-decoration:none;
+    word-break:break-word;
+  }
+  a.inline:hover{ text-decoration:underline; }
+  ul, ol.list{
+    margin:0 0 12px;
+    padding-right:22px;
+  }
+  ul li, ol.list li{
+    margin-bottom:6px;
+    font-size:15px;
+    color:#374151;
+  }
+  .callout{
+    background:#f9fafb;
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:16px 20px;
+    margin:14px 0;
+    font-size:14.5px;
+    color:#4b5563;
+  }
+  .permission-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+    margin:16px 0;
+  }
+  .permission-card{
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:16px;
+    background:#fafafa;
+  }
+  .permission-card strong{
+    display:block;
+    color:var(--accent);
+    font-size:13.5px;
+    letter-spacing:.03em;
+    margin-bottom:6px;
+  }
+  .permission-card span{
+    font-size:14px;
+    color:#4b5563;
+  }
+  footer{
+    text-align:center;
+    padding:30px 20px 50px;
+    color:var(--muted);
+    font-size:13px;
+  }
+  @media (max-width:640px){
+    .permission-grid{ grid-template-columns:1fr; }
+    main{ padding:28px 22px 40px; }
+    header h1{ font-size:26px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="badge">Spectra Flashlight · قانونی</div>
+  <h1>پرائیویسی پالیسی</h1>
+  <p>یکم مئی 2026 سے اپ ڈیٹ شدہ اور نافذ العمل</p>
+</header>
+
+<div class="container">
+
+  <div class="toc">
+    <h2>فہرست</h2>
+    <ol>
+      <li><a href="#general">عمومی جائزہ</a></li>
+      <li><a href="#collection">ڈیٹا کا حصول اور استعمال</a></li>
+      <li><a href="#security">ڈیٹا کی سیکیورٹی</a></li>
+      <li><a href="#rights">صارف کے حقوق</a></li>
+      <li><a href="#links">بیرونی لنکس</a></li>
+      <li><a href="#age">عمر کی حد</a></li>
+      <li><a href="#updates">پرائیویسی پالیسی میں اپ ڈیٹس</a></li>
+      <li><a href="#contact">رابطہ کی معلومات</a></li>
+    </ol>
+  </div>
+
+  <main>
+
+    <section id="general">
+      <h2>1. عمومی جائزہ</h2>
+      <p>"HA VISIONARY" ("ہم"، "ہماری") کا انتخاب کرنے کا شکریہ۔ ہم اعتماد، سادگی اور عقیدت پر مبنی اخلاقی کارکردگی کے اصولوں کے تحت صارفین کی پرائیویسی کے تحفظ کے لیے پرعزم ہیں۔ ہمارا بنیادی مقصد ہماری موبائل ایپ <strong>Spectra Flashlight</strong> استعمال کرتے وقت گاہک کی معلومات کا تحفظ کرنا اور بہتر سروسز فراہم کرنا ہے۔</p>
+      <p>یہ پالیسی صرف اس معلومات پر لاگو ہوتی ہے جو اس ایپ کے ذریعے جمع کی جاتی ہے یا آپ کی طرف سے اس ایپ کے ساتھ مواصلات میں بھیجی جاتی ہے۔</p>
+      <p>اس پالیسی کو غور سے پڑھیں تاکہ آپ ہماری پالیسیوں کو سمجھ سکیں۔ اگر آپ اتفاق نہیں کرتے تو براہ کرم اس ایپ کو استعمال نہ کریں۔ ایپ ڈاؤن لوڈ یا استعمال کرکے، آپ اس پرائیویسی پالیسی سے اتفاق کرتے ہیں۔</p>
+      <div class="callout">
+        اگر آپ کے کوئی سوالات ہیں، تو براہ کرم ہم سے اس ای میل پر رابطہ کریں:
+        <a class="inline" href="mailto:havisionary.support@gmail.com">havisionary.support@gmail.com</a>۔
+      </div>
+    </section>
+
+    <section id="collection">
+      <h2>2. ڈیٹا کا حصول اور استعمال</h2>
+
+      <h3>وہ ڈیٹا جو آپ ہمیں فراہم کرتے ہیں</h3>
+      <p>جب آپ ایپ استعمال کرتے ہیں، ہم سے رابطہ کرتے ہیں، یا اپنی رائے بھیجتے ہیں، تو ہم آپ کا نام اور ای میل ایڈریس حاصل کر سکتے ہیں۔</p>
+
+      <h3>خودکار ڈیٹا کا حصول</h3>
+      <p>ایپ کو استعمال کرتے وقت ہم درج ذیل خودکار معلومات جمع کر سکتے ہیں:</p>
+      <ul>
+        <li><strong>آلہ (Device):</strong> ڈیوائس کی قسم اور آئی ڈی تاکہ درست سپورٹ فراہم کی جا سکے۔</li>
+        <li><strong>تجزیات (Analytics):</strong> ٹریفک اور استعمال کے رجحانات جانچنے کے لیے گوگل اینالیٹکس کا استعمال۔</li>
+        <li><strong>لاگ ڈیٹا (Log Data):</strong> خرابی کی صورت میں آئی پی ایڈریس، آپریٹنگ سسٹم اور وقت کی معلومات۔</li>
+      </ul>
+
+      <h3>درکار اجازتیں (Permissions)</h3>
+      <p>ایپ کو کام کرنے کے لیے درج ذیل اجازتوں کی ضرورت ہے:</p>
+      <div class="permission-grid">
+        <div class="permission-card">
+          <strong>فلیش لائٹ (FLASHLIGHT)</strong>
+          <span>ایپ کے بنیادی کام کے لیے ضروری ہے۔</span>
+        </div>
+        <div class="permission-card">
+          <strong>مقام (LOCATION)</strong>
+          <span>نقشے پر لوکیشن دکھانے کے لیے درکار ہے۔ ہم صارف کے مقام کی معلومات محفوظ نہیں کرتے۔</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="security">
+      <h2>3. ڈیٹا کی سیکیورٹی</h2>
+      <p>آپ کے ڈیٹا کی رازداری ہمارے لیے انتہائی اہم ہے۔ ہم ڈیٹا کے تحفظ کے لیے معیاری پروٹوکولز کی پیروی کرتے ہیں۔</p>
+      <div class="callout">
+        ہماری ایپ کے استعمال کے لیے <strong>کسی اکاؤنٹ کی ضرورت نہیں</strong> ہے، اس لیے ہم آپ کا کوئی ذاتی ڈیٹا <strong>جمع نہیں کرتے</strong>۔ سارا ڈیٹا صرف آپ کی ڈیوائس پر رہتا ہے اور ایپ ڈیلیٹ کرنے پر ختم ہو جاتا ہے۔
+      </div>
+    </section>
+
+    <section id="rights">
+      <h2>4. صارف کے حقوق</h2>
+      <p>ہم اپنے صارفین کو درج ذیل حقوق فراہم کرتے ہیں:</p>
+      <ol class="list">
+        <li><strong>رسائی کا حق:</strong> اپنے ذاتی ڈیٹا کی تفصیلات مانگنے کا حق۔</li>
+        <li><strong>درستگی کا حق:</strong> غلط ڈیٹا درست کروانے کا حق۔</li>
+        <li><strong>رضامندی واپس لینے کا حق:</strong> اپنی رضامندی واپس لینے کا حق۔</li>
+        <li><strong>حذف کرنے کا حق:</strong> اپنا ڈیٹا مٹانے کی درخواست کرنے کا حق۔</li>
+      </ol>
+    </section>
+
+    <section id="links">
+      <h2>5. بیرونی لنکس</h2>
+      <p>ہماری سروس میں دوسری ویب سائٹ کے لنکس شامل ہو سکتے ہیں۔ ہم فریق ثالث (Third-party) کی پرائیویسی پالیسیوں کے ذمہ دار نہیں ہیں۔</p>
+      <ul>
+        <li>گوگل پلے سروسز: <a class="inline" href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+        <li>ایڈموب (AdMob): <a class="inline" href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" rel="noopener">support.google.com/admob</a></li>
+      </ul>
+    </section>
+
+    <section id="age">
+      <h2>6. عمر کی حد</h2>
+      <p>یہ خدمات 14 سال اور اس سے زیادہ عمر کے افراد کے لیے ہیں۔ ہم نادانستہ طور پر کم عمر بچوں سے ڈیٹا اکٹھا نہیں کرتے۔</p>
+    </section>
+
+    <section id="updates">
+      <h2>7. پرائیویسی پالیسی میں اپ ڈیٹس</h2>
+      <p>ہم اس پرائیویسی پالیسی کو تبدیل کر سکتے ہیں۔ تمام تبدیلیاں شائع ہونے کے بعد فوری طور پر نافذ العمل ہوں گی۔</p>
+    </section>
+
+    <section id="contact">
+      <h2>8. رابطہ کی معلومات</h2>
+      <p>کسی بھی سوال یا تبصرے کے لیے، براہ کرم ہمیں اس پتے پر ای میل کریں:
+        <a class="inline" href="mailto:havisionary.support@gmail.com">havisionary.support@gmail.com</a>۔
+      </p>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  © 2026 HA VISIONARY — Spectra Flashlight. جملہ حقوق محفوظ ہیں۔
+</footer>
+
+</body>
+</html>
