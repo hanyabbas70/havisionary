@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kebijakan Privasi | Spectra Flashlight</title>
+<style>
+  :root{
+    --bg:#0f1720;
+    --panel:#ffffff;
+    --accent:#2563eb;
+    --accent-light:#eef4ff;
+    --text:#1f2937;
+    --muted:#6b7280;
+    --border:#e5e7eb;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:linear-gradient(180deg,#0f1720 0%, #1e293b 260px, #f3f4f6 260px);
+    color:var(--text);
+    line-height:1.65;
+  }
+  header{
+    max-width:900px;
+    margin:0 auto;
+    padding:56px 24px 40px;
+    color:#fff;
+    text-align:center;
+  }
+  header .badge{
+    display:inline-block;
+    background:rgba(255,255,255,0.12);
+    padding:6px 16px;
+    border-radius:999px;
+    font-size:13px;
+    letter-spacing:.03em;
+    margin-bottom:16px;
+  }
+  header h1{
+    font-size:32px;
+    margin:0 0 10px;
+    font-weight:700;
+  }
+  header p{
+    color:#cbd5e1;
+    margin:0;
+    font-size:15px;
+  }
+  .container{
+    max-width:900px;
+    margin:-40px auto 60px;
+    background:var(--panel);
+    border-radius:16px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.12);
+    padding:0;
+    overflow:hidden;
+  }
+  .toc{
+    background:var(--accent-light);
+    padding:28px 32px;
+    border-bottom:1px solid var(--border);
+  }
+  .toc h2{
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    color:var(--accent);
+    margin:0 0 14px;
+  }
+  .toc ol{
+    margin:0;
+    padding-left:20px;
+    columns:2;
+    gap:24px;
+  }
+  .toc li{
+    margin-bottom:8px;
+    font-size:14.5px;
+  }
+  .toc a{
+    color:var(--text);
+    text-decoration:none;
+  }
+  .toc a:hover{
+    color:var(--accent);
+    text-decoration:underline;
+  }
+  main{
+    padding:36px 40px 50px;
+  }
+  section{
+    margin-bottom:36px;
+    scroll-margin-top:20px;
+  }
+  section h2{
+    font-size:20px;
+    color:#111827;
+    border-left:4px solid var(--accent);
+    padding-left:12px;
+    margin:0 0 14px;
+  }
+  section h3{
+    font-size:15.5px;
+    color:var(--accent);
+    margin:20px 0 6px;
+  }
+  p{
+    margin:0 0 12px;
+    color:#374151;
+    font-size:15px;
+  }
+  a.inline{
+    color:var(--accent);
+    text-decoration:none;
+    word-break:break-word;
+  }
+  a.inline:hover{ text-decoration:underline; }
+  ul, ol.list{
+    margin:0 0 12px;
+    padding-left:22px;
+  }
+  ul li, ol.list li{
+    margin-bottom:6px;
+    font-size:15px;
+    color:#374151;
+  }
+  .callout{
+    background:#f9fafb;
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:16px 20px;
+    margin:14px 0;
+    font-size:14.5px;
+    color:#4b5563;
+  }
+  .permission-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+    margin:16px 0;
+  }
+  .permission-card{
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:16px;
+    background:#fafafa;
+  }
+  .permission-card strong{
+    display:block;
+    color:var(--accent);
+    font-size:13.5px;
+    letter-spacing:.03em;
+    margin-bottom:6px;
+  }
+  .permission-card span{
+    font-size:14px;
+    color:#4b5563;
+  }
+  footer{
+    text-align:center;
+    padding:30px 20px 50px;
+    color:var(--muted);
+    font-size:13px;
+  }
+  footer a{ color:var(--accent); text-decoration:none; }
+  @media (max-width:640px){
+    .toc ol{ columns:1; }
+    .permission-grid{ grid-template-columns:1fr; }
+    main{ padding:28px 22px 40px; }
+    header h1{ font-size:26px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="badge">Spectra Flashlight · Legal</div>
+  <h1>Kebijakan Privasi</h1>
+  <p>Diperbarui dan berlaku efektif mulai 1 Mei 2026</p>
+</header>
+
+<div class="container">
+
+  <div class="toc">
+    <h2>Daftar Isi</h2>
+    <ol>
+      <li><a href="#general">Umum</a></li>
+      <li><a href="#collection">Pengumpulan dan Penggunaan Data</a></li>
+      <li><a href="#security">Keamanan dan Penyimpanan Data</a></li>
+      <li><a href="#rights">Hak Pengguna</a></li>
+      <li><a href="#links">Tautan Eksternal</a></li>
+      <li><a href="#age">Batasan Usia</a></li>
+      <li><a href="#updates">Pembaruan Kebijakan Privasi</a></li>
+      <li><a href="#contact">Detail Kontak</a></li>
+    </ol>
+  </div>
+
+  <main>
+
+    <section id="general">
+      <h2>1. Umum</h2>
+      <p>Terima kasih telah memilih "HA VISIONARY" ("kami"). Kami berkomitmen untuk menjaga privasi pelanggan melalui budaya kinerja etis yang didasarkan pada kepercayaan, kesederhanaan, dan keyakinan. Salah satu prinsip utama kami adalah mengamankan informasi pelanggan saat menggunakan aplikasi seluler kami <strong>Spectra Flashlight</strong> ("aplikasi"), dan memberikan perlindungan privasi yang sangat penting dalam menjaga kepercayaan serta memberikan layanan yang lebih baik.</p>
+      <p>Kebijakan ini berlaku secara eksklusif untuk informasi yang dikumpulkan di dalam aplikasi, serta untuk email, teks, dan komunikasi elektronik lainnya yang dikirim oleh Anda melalui atau sehubungan dengan aplikasi.</p>
+      <p>Harap baca kebijakan ini dengan saksama untuk memahami kebijakan dan praktik kami mengenai informasi Anda dan bagaimana kami menanganinya. Jika Anda tidak setuju dengan kebijakan dan praktik kami, harap jangan mengunduh atau menggunakan aplikasi ini. Dengan mengunduh atau menggunakan aplikasi, Anda setuju untuk mematuhi kebijakan privasi ini.</p>
+      <div class="callout">
+        Meninjau Kebijakan Privasi ini akan membantu Anda memahami hak dan pilihan privasi Anda. Jika Anda memiliki pertanyaan atau kekhawatiran, jangan ragu untuk menghubungi kami di
+        <a class="inline" href="mailto:havisionary.support@gmail.com">havisionary.support@gmail.com</a>.
+      </div>
+    </section>
+
+    <section id="collection">
+      <h2>2. Pengumpulan dan Penggunaan Data</h2>
+
+      <h3>Data yang Anda Berikan kepada Kami</h3>
+      <p>Kami mengumpulkan informasi yang Anda berikan secara sukarela kepada kami saat Anda menggunakan aplikasi, menyatakan minat untuk mendapatkan informasi tentang kami atau aplikasi kami, berpartisipasi dalam aktivitas di dalam aplikasi, atau mengirimkan umpan balik kepada kami. Informasi yang kami kumpulkan bergantung pada konteks interaksi Anda dengan kami dan aplikasi, dan dapat mencakup: nama pengguna dan alamat email.</p>
+
+      <h3>Pengumpulan Informasi Otomatis</h3>
+      <p>Saat Anda mengunduh, mengakses, dan menggunakan aplikasi, aplikasi mungkin menggunakan teknologi untuk mengumpulkan data berikut secara otomatis:</p>
+      <ul>
+        <li><strong>Perangkat:</strong> Kami secara otomatis mengumpulkan informasi tentang jenis perangkat tempat Anda mengunduh aplikasi dan pengenal perangkat Anda, untuk memastikan kami memberikan versi aplikasi yang tepat dan memberikan dukungan yang sesuai.</li>
+        <li><strong>Analitik:</strong> Kami menggunakan alat analitik pihak ketiga, Google Analytics, untuk mengukur tren lalu lintas dan penggunaan layanan, termasuk seberapa sering pengguna mengunjungi layanan kami dan halaman mana yang mereka kunjungi. Informasi ini digunakan hanya untuk meningkatkan layanan kami.</li>
+        <li><strong>Data Log:</strong> Jika terjadi kesalahan dalam aplikasi, data yang dikumpulkan melalui produk pihak ketiga (Data Log) dapat mencakup alamat IP perangkat Anda, nama perangkat, versi sistem operasi, konfigurasi aplikasi, waktu dan tanggal penggunaan, serta statistik lainnya.</li>
+      </ul>
+
+      <h3>Persyaratan Izin Aplikasi</h3>
+      <p>Untuk mengaktifkan fungsi tertentu, aplikasi memerlukan izin berikut pada perangkat Anda:</p>
+      <div class="permission-grid">
+        <div class="permission-card">
+          <strong>SENTER (FLASHLIGHT)</strong>
+          <span>Penting untuk aplikasi — kegagalan memberikan izin ini menyebabkan fitur dasar tidak lengkap.</span>
+        </div>
+        <div class="permission-card">
+          <strong>LOKASI</strong>
+          <span>Diminta untuk menampilkan lokasi Anda di halaman peta. Kami tidak menyimpan informasi lokasi pengguna.</span>
+        </div>
+      </div>
+
+      <h3>Penggunaan Data</h3>
+      <p>Kami menjamin bahwa informasi Anda hanya akan digunakan untuk menghubungi Anda dan meningkatkan layanan kami. Kami tidak akan pernah menggunakan informasi tersebut (misalnya, nama dan alamat email Anda) untuk tujuan lain, seperti pemasaran lebih lanjut. Kami tidak akan pernah mengungkapkan informasi pribadi Anda kepada pihak ketiga untuk keuntungan komersial, dan kami tidak akan membagikan data apa pun yang dikumpulkan dengan Google tanpa meminta persetujuan Anda terlebih dahulu.</p>
+      <p>Kami mungkin mengungkapkan informasi Anda untuk mematuhi persyaratan hukum, seperti menanggapi perintah pengadilan atau permintaan pemerintah. Jika aplikasi kami diakuisisi atau digabungkan dengan perusahaan lain, informasi Anda akan dialihkan sebagai bagian dari transaksi dengan persetujuan Anda.</p>
+    </section>
+
+    <section id="security">
+      <h2>3. Keamanan dan Penyimpanan Data</h2>
+      <p>Privasi data Anda adalah prioritas utama bagi kami. Kami mematuhi protokol yang diterima secara universal untuk melindungi data yang diberikan kepada kami, baik selama transmisi maupun setelah diterima. Namun, tidak ada metode transmisi atau penyimpanan elektronik yang 100% aman. Konsekuensinya, Anda mengakui dan menerima bahwa kami tidak dapat memastikan perlindungan informasi pribadi Anda yang dikirimkan ke aplikasi kami, dan transmisi tersebut dilakukan atas risiko Anda sendiri. Kami menggunakan prosedur dan langkah-langkah keamanan yang ketat untuk mencegah akses yang tidak sah.</p>
+      <div class="callout">
+        Kami <strong>TIDAK</strong> mengharuskan Anda membuat akun di aplikasi kami, dan oleh karena itu kami <strong>TIDAK</strong> mengumpulkan data pribadi apa pun dari Anda saat Anda mengunduh dan/atau menggunakan aplikasi. Informasi yang dikumpulkan secara otomatis digunakan hanya untuk tujuan operasional dan tidak disimpan — semua data disimpan hanya di perangkat Anda, dan dihapus secara permanen dengan menghapus data sistem atau menghapus instalan aplikasi.
+      </div>
+    </section>
+
+    <section id="rights">
+      <h2>4. Hak Pengguna</h2>
+      <p>Kami menawarkan hak-hak berikut untuk melindungi data pengguna global kami:</p>
+      <ol class="list">
+        <li><strong>Hak Akses.</strong> Anda memiliki hak untuk menerima detail tentang data pribadi Anda yang diproses oleh kami berdasarkan permintaan.</li>
+        <li><strong>Hak untuk Perbaikan.</strong> Anda memiliki hak untuk mengubah atau memperbaiki data Anda jika tidak benar, tidak akurat, atau tidak lengkap.</li>
+        <li><strong>Hak untuk Menarik Persetujuan.</strong> Anda dapat menarik persetujuan yang diberikan kepada kami kapan saja. Hal ini tidak memengaruhi legitimasi pemrosesan yang dilakukan sebelum penarikan.</li>
+        <li><strong>Hak untuk Penghapusan.</strong> Anda dapat meminta penghapusan data Anda dalam keadaan seperti:
+          <ul>
+            <li>Tujuan pemrosesan tertentu telah tercapai;</li>
+            <li>Kami telah memproses data Anda secara melanggar hukum;</li>
+            <li>Anda telah menarik persetujuan tanpa dasar hukum lain yang berlaku;</li>
+            <li>Anda telah berhasil menolak pemrosesan data;</li>
+            <li>Penghapusan diperlukan berdasarkan undang-undang UE atau hukum negara anggota UE yang berlaku bagi kami.</li>
+          </ul>
+        </li>
+      </ol>
+      <p>Kami mungkin menawarkan hak tambahan kepada penduduk wilayah tertentu yang tunduk pada hukum perlindungan data yang berlaku secara lokal. Kami menghormati dan secara konsisten mengadopsi berbagai protokol untuk menjaga data Anda di mana pun lokasi Anda berada.</p>
+      <p>Jika Anda memiliki pertanyaan tentang hak-hak ini, atau ingin menggunakan salah satunya, silakan hubungi kami melalui email.</p>
+    </section>
+
+    <section id="links">
+      <h2>5. Tautan Eksternal</h2>
+      <p>Layanan kami mungkin menyertakan hyperlink ke situs web lain. Setelah mengakses situs eksternal yang ditautkan, Anda mengakui bahwa hal tersebut berada di luar lingkup operasional kami. Kami menyarankan Anda untuk meninjau kebijakan privasi situs web tersebut. Konten, praktik privasi, atau kebijakan pihak ketiga mana pun berada di luar kendali kami dan tidak memikul tanggung jawab di bawah Kebijakan Privasi ini.</p>
+      <ul>
+        <li>Google Play Services: <a class="inline" href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+        <li>AdMob: <a class="inline" href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" rel="noopener">support.google.com/admob</a></li>
+      </ul>
+    </section>
+
+    <section id="age">
+      <h2>6. Batasan Usia</h2>
+      <p>Layanan ini melayani individu berusia 14 tahun ke atas. Kami tidak bermaksud untuk memperoleh informasi dari peserta di bawah umur. Setelah penemuan data di bawah umur yang dikirimkan, penghapusan segera dipastikan. Orang tua/wali — jika anak di bawah umur Anda telah memberikan informasi pribadi, silakan hubungi kami.</p>
+    </section>
+
+    <section id="updates">
+      <h2>7. Pembaruan Kebijakan Privasi</h2>
+      <p>Kami mungkin mengubah kebijakan privasi ini dari waktu ke waktu. Jika kami melakukannya, tanggal pada kebijakan akan diperbarui untuk menunjukkan bahwa perubahan telah dibuat. Untuk semua pengguna, perubahan mulai berlaku setelah diposting. Kami menyarankan Anda untuk meninjau kebijakan privasi ini secara berkala untuk mendapatkan informasi terbaru tentang praktik privasi kami.</p>
+    </section>
+
+    <section id="contact">
+      <h2>8. Detail Kontak</h2>
+      <p>Kami menerima komentar atau pertanyaan Anda mengenai Kebijakan Privasi ini. Silakan kirim email kepada kami di
+        <a class="inline" href="mailto:havisionary.support@gmail.com">havisionary.support@gmail.com</a>.
+      </p>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  © 2026 HA VISIONARY — Spectra Flashlight. Hak cipta dilindungi undang-undang.
+</footer>
+
+</body>
+</html>
