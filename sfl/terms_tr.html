@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kullanım Koşulları | Spectra Flashlight</title>
+<style>
+  :root{
+    --bg:#0f1720;
+    --panel:#ffffff;
+    --accent:#2563eb;
+    --accent-light:#eef4ff;
+    --text:#1f2937;
+    --muted:#6b7280;
+    --border:#e5e7eb;
+    --warn:#b45309;
+    --warn-bg:#fffbeb;
+    --warn-border:#fde68a;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:linear-gradient(180deg,#0f1720 0%, #1e293b 260px, #f3f4f6 260px);
+    color:var(--text);
+    line-height:1.65;
+  }
+  header{
+    max-width:900px;
+    margin:0 auto;
+    padding:56px 24px 40px;
+    color:#fff;
+    text-align:center;
+  }
+  header .badge{
+    display:inline-block;
+    background:rgba(255,255,255,0.12);
+    padding:6px 16px;
+    border-radius:999px;
+    font-size:13px;
+    letter-spacing:.03em;
+    margin-bottom:16px;
+  }
+  header h1{
+    font-size:32px;
+    margin:0 0 10px;
+    font-weight:700;
+  }
+  header p{
+    color:#cbd5e1;
+    margin:0;
+    font-size:15px;
+  }
+  .container{
+    max-width:900px;
+    margin:-40px auto 60px;
+    background:var(--panel);
+    border-radius:16px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.12);
+    padding:0;
+    overflow:hidden;
+  }
+  .toc{
+    background:var(--accent-light);
+    padding:28px 32px;
+    border-bottom:1px solid var(--border);
+  }
+  .toc h2{
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    color:var(--accent);
+    margin:0 0 14px;
+  }
+  .toc ol{
+    margin:0;
+    padding-left:20px;
+    columns:2;
+    gap:24px;
+  }
+  .toc li{
+    margin-bottom:8px;
+    font-size:14.5px;
+  }
+  .toc a{
+    color:var(--text);
+    text-decoration:none;
+  }
+  .toc a:hover{
+    color:var(--accent);
+    text-decoration:underline;
+  }
+  main{
+    padding:36px 40px 50px;
+  }
+  section{
+    margin-bottom:36px;
+    scroll-margin-top:20px;
+  }
+  section h2{
+    font-size:20px;
+    color:#111827;
+    border-left:4px solid var(--accent);
+    padding-left:12px;
+    margin:0 0 14px;
+  }
+  p{
+    margin:0 0 12px;
+    color:#374151;
+    font-size:15px;
+  }
+  a.inline{
+    color:var(--accent);
+    text-decoration:none;
+    word-break:break-word;
+  }
+  a.inline:hover{ text-decoration:underline; }
+  ul, ol.list{
+    margin:0 0 12px;
+    padding-left:22px;
+  }
+  ul li, ol.list li{
+    margin-bottom:6px;
+    font-size:15px;
+    color:#374151;
+  }
+  .restriction-list{
+    list-style:none;
+    padding:0;
+    margin:0 0 12px;
+    display:grid;
+    gap:8px;
+  }
+  .restriction-list li{
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+    background:#f9fafb;
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:10px 14px;
+    font-size:14.5px;
+    color:#374151;
+  }
+  .restriction-list .letter{
+    flex-shrink:0;
+    width:22px;
+    height:22px;
+    border-radius:6px;
+    background:var(--accent);
+    color:#fff;
+    font-size:12px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .callout{
+    background:#f9fafb;
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:16px 20px;
+    margin:14px 0;
+    font-size:14.5px;
+    color:#4b5563;
+  }
+  .callout.warn{
+    background:var(--warn-bg);
+    border-color:var(--warn-border);
+    color:#92400e;
+  }
+  .callout.warn strong{ color:var(--warn); }
+  .strong-notice{
+    background:#111827;
+    color:#f9fafb;
+    border-radius:10px;
+    padding:18px 20px;
+    margin:14px 0;
+    font-size:14px;
+    letter-spacing:.01em;
+  }
+  .feature-tag{
+    display:inline-block;
+    background:var(--accent-light);
+    color:var(--accent);
+    font-size:12px;
+    font-weight:600;
+    padding:3px 10px;
+    border-radius:999px;
+    margin-bottom:10px;
+  }
+  footer{
+    text-align:center;
+    padding:30px 20px 50px;
+    color:var(--muted);
+    font-size:13px;
+  }
+  footer a{ color:var(--accent); text-decoration:none; }
+  @media (max-width:640px){
+    .toc ol{ columns:1; }
+    main{ padding:28px 22px 40px; }
+    header h1{ font-size:26px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="badge">Spectra Flashlight · Yasal</div>
+  <h1>Kullanım Koşulları</h1>
+  <p>Son güncelleme ve yürürlük tarihi: 1 Mayıs 2026</p>
+</header>
+
+<div class="container">
+
+  <div class="toc">
+    <h2>İçindekiler</h2>
+    <ol>
+      <li><a href="#intro">Giriş ve Kabul</a></li>
+      <li><a href="#updates">Güncelleme</a></li>
+      <li><a href="#restrictions">Kısıtlamalar</a></li>
+      <li><a href="#ip">Fikri Mülkiyet</a></li>
+      <li><a href="#thirdparty">Üçüncü Taraf Bağlantıları</a></li>
+      <li><a href="#advertising">Reklam</a></li>
+      <li><a href="#purchase">Ömür Boyu Reklam Kaldırma Satın Alımı</a></li>
+      <li><a href="#transfer">Devir</a></li>
+      <li><a href="#termination">Fesih</a></li>
+      <li><a href="#liability">Sorumluluk</a></li>
+      <li><a href="#privacy">Gizlilik Politikası</a></li>
+      <li><a href="#voodoo">İsteğe Bağlı Voodoo Modu</a></li>
+      <li><a href="#disclaimers">Sorumluluk Reddi ve Garantiler</a></li>
+      <li><a href="#general">Genel</a></li>
+    </ol>
+  </div>
+
+  <main>
+
+    <section id="intro">
+      <h2>1. Giriş ve Kabul</h2>
+      <p>Bu Kullanım Koşulları, "HA VISIONARY" ile sizin aranızda yapılan ve uygulamalarımızı kullanımınızla ilgili haklarınız ve bizim haklarımız konusunda sizi bilgilendiren bir sözleşmedir.</p>
+      <p>Lütfen bu koşulları çok dikkatli okuyun, çünkü hizmetlerimizi kullanarak bu koşulları okuduğunuzu, anladığınızı ve bunlara bağlı kalmayı kabul ettiğinizi beyan etmiş olursunuz. Tüm bu koşulları kabul etmiyorsanız, uygulamalarımızı kullanamazsınız.</p>
+    </section>
+
+    <section id="updates">
+      <h2>2. Güncelleme</h2>
+      <p>Bu koşullar zaman zaman değiştirilebilir. Önemli bir değişiklik yaparsak, sizi bilgilendireceğiz ve bu değişiklikler, koşullarımızın güncellendiği an itibarıyla yürürlüğe girecektir. Uygulamalarımızı kullanmaya devam etmeniz, değişiklikleri kabul ettiğiniz anlamına gelecektir. Küçük düzeltmeler veya ayarlamalarla sonuçlanan değişiklikler konusunda sizi bilgilendirme yükümlülüğümüz yoktur. Bu nedenle, herhangi bir değişiklikten haberdar olmak için lütfen bu koşulları düzenli olarak inceleyin.</p>
+      <p>Ayrıca, performansı artırmak, işlevselliği geliştirmek, işletim sistemi değişikliklerini yansıtmak veya güvenlik sorunlarını ele almak için uygulamalarımızı sık sık otomatik olarak güncelleyebiliriz. Bu tür güncellemeleri yüklememeyi tercih ederseniz veya otomatik güncellemeleri devre dışı bırakırsanız, uygulamalarımızı kullanmaya devam edemeyebilirsiniz.</p>
+    </section>
+
+    <section id="restrictions">
+      <h2>3. Kısıtlamalar</h2>
+      <p>Önceden yazılı iznimizi almadığınız sürece veya bu Koşullarda açıkça izin verilmedikçe, şunları yapmamalısınız:</p>
+      <ul class="restriction-list">
+        <li><span class="letter">a</span> Uygulamalarımızı normal kullanımınızın bir parçası olarak veya yedekleme ya da operasyonel güvenlik amaçları için gerekli durumlar dışında kopyalamak.</li>
+        <li><span class="letter">b</span> Uygulamamızın tamamını veya bir kısmını değiştirmek, çevirmek ya da uygulamamızı başka herhangi bir nesne kodu veya programla birleştirmek.</li>
+        <li><span class="letter">c</span> Uygulamalarımızı tersine mühendisliğe tabi tutmak, parçalarına ayırmak, kaynak koduna dönüştürmek veya yürürlükteki yasaların izin verdiği durumlar dışında, uygulamalarımızın tamamı veya bir kısmı temel alınarak türev eserler oluşturmak (veya oluşturmaya çalışmak).</li>
+        <li><span class="letter">d</span> Uygulamalarımızı veya uygulamalarımızı kullanma hakkınızı dağıtmak, alt lisansını vermek, devretmek, paylaşmak, zaman paylaşımlı kullanıma sunmak, satmak, kiralamak, leasing yapmak, teminat olarak göstermek, hizmet bürosu amaçlarıyla kullanmak veya başka bir şekilde aktarmak.</li>
+        <li><span class="letter">e</span> Uygulamalarımızda yer alan telif hakkı, ticari marka veya diğer mülkiyet bildirimlerini, materyalleri ya da bize, lisans verenlerimize veya diğer üçüncü taraflara ait reklamları kaldırmak, değiştirmek, engellemek, devre dışı bırakmak, gizlemek veya bozmak.</li>
+        <li><span class="letter">f</span> Uygulamalarımızı başka bir hizmete veya web sitesine dahil etmek ya da çerçeveleme (framing) veya aynalama (mirroring) yoluyla erişilebilir kılmak.</li>
+        <li><span class="letter">g</span> Uygulamalarımızdan herhangi bir veri veya meta veri çıkarmak ya da bunun herhangi bir bölümünü içeren bir dizin veya veritabanı oluşturmak.</li>
+        <li><span class="letter">h</span> Uygulamalarımıza zarar verebilecek herhangi bir şey yapmak.</li>
+        <li><span class="letter">i</span> Uygulamalarımızı kullanarak herhangi bir zararlı veya yasa dışı faaliyet yürütmek.</li>
+        <li><span class="letter">j</span> Uygulamalarımızı, bu Koşullarda açıkça yetkilendirilmemiş herhangi bir şekilde kullanmak.</li>
+      </ul>
+      <p>Aksi takdirde, yukarıdaki ihlal sonucunda maruz kalacağımız zararları (yasal ücretler dahil) bize tazmin edeceksiniz.</p>
+    </section>
+
+    <section id="ip">
+      <h2>4. Fikri Mülkiyet</h2>
+      <p>Uygulamalarımızın, uygulama içeriğinin ve ilgili belgelerin özel mülkiyet haklarını, bize ve lisans verenlerimize ait olmak üzere dünya genelinde saklı tutarız.</p>
+      <p>Uygulamalarımız telif hakkı, ticari marka ve diğer yasalarla korunmaktadır. Fikri mülkiyet haklarımız, önceden yazılı iznimiz olmadan herhangi bir ürün veya hizmetle bağlantılı olarak kullanılamaz. Uygulamalarımızın veya lisans verenlerimizin içeriğinin satılması, değiştirilmesi, dağıtılması, kopyalanması, çoğaltılması, iletilmesi, halka açık olarak sergilenmesi veya türev eserlerinin oluşturulması ya da ticari amaçla kullanılmasına izin verilmemektedir.</p>
+    </section>
+
+    <section id="thirdparty">
+      <h2>5. Üçüncü Taraf Bağlantıları</h2>
+      <p>Uygulamalarımızın, bize ait olmayan veya bizim tarafımızdan kontrol edilmeyen (reklamlar yoluyla veya başka şekilde) üçüncü taraf web sitelerine bağlantılar içerebileceğini kabul edersiniz. Bu tür bağlantılar yalnızca kullanıcı deneyiminiz için sağlanmıştır. Bu tür web sitelerini kontrol etmiyoruz ve içeriklerinden ya da bunları kullanımınızdan sorumlu değiliz.</p>
+      <p>Bu tür içeriğe erişerek aşağıdakileri kabul etmiş olursunuz:</p>
+      <ol class="list">
+        <li>Bağlantılı kaynakları yöneten geçerli lisans koşullarını (örneğin, MIT Lisansı) incelemek ve bunlara uymaktan siz sorumlusunuz.</li>
+        <li>Üçüncü taraf kaynaklarını kullanımınızdan veya bunların lisans gerekliliklerine uymamanızdan kaynaklanabilecek herhangi bir iddiadan sorumlu değiliz.</li>
+      </ol>
+    </section>
+
+    <section id="advertising">
+      <h2>6. Reklam</h2>
+      <p>Uygulamalarımız, Google AdMob dahil ancak bunlarla sınırlı olmamak üzere, üçüncü taraf reklam ağları ve ortakları tarafından sağlanan reklamları görüntüleyebilir. Bu reklamlar, kendi algoritmaları ve içerik politikaları doğrultusunda üçüncü taraflarca oluşturulur ve sunulur. Herhangi bir zamanda herhangi bir kullanıcıya hangi belirli reklamın gösterileceği üzerinde <strong>hiçbir editoryal kontrolümüz yoktur</strong> ve reklamlar görüntülenmeden önce bunları oluşturmuyor, yazmıyor, tasarlamıyor veya önceden incelemiyoruz.</p>
+      <p>Buna göre:</p>
+      <ul class="restriction-list">
+        <li><span class="letter">a</span> Reklamı yapılan herhangi bir içeriğin, ürünün veya hizmetin doğruluğundan, yasallığından veya uygunluğundan sorumlu değiliz.</li>
+        <li><span class="letter">b</span> Bir reklamverenle veya bir reklam yoluyla ulaşılan herhangi bir web sitesiyle yapabileceğiniz herhangi bir işlem, iletişim veya etkileşimden sorumlu değiliz.</li>
+        <li><span class="letter">c</span> Küresel kullanıcı kitlemizin çeşitliliği göz önüne alındığında, bazı reklamlar zaman zaman İslami değerler ve ilkeler dahil ancak bunlarla sınırlı olmamak üzere, bazı kullanıcıların dini, kültürel veya kişisel değerleriyle uyuşmayan içerik, ürün veya mesajlar yansıtabilir. Bu tür içerikleri onaylamıyor, seçmiyor veya amaçlamıyoruz ve üçüncü taraf reklam ağları tarafından görüntülenen reklamlardan kaynaklanan dini, ahlaki veya diğer her türlü sorumluluğu reddediyoruz.</li>
+        <li><span class="letter">d</span> Uygunsuz veya saldırgan reklamların görüntülenme olasılığını azaltmak için içerik kategorisi engelleme ve reklam ortaklarımız tarafından sunulan maksimum reklam içerik derecelendirme ayarları dahil olmak üzere makul ve teknik olarak mevcut önlemleri alıyoruz. Ancak, bu önlemler platform düzeyinde uygulanan filtrelerdir ve son reklam seçimi üçüncü taraf ağın otomatik kontrolü altında kaldığından, belirli herhangi bir içerik türünün tamamen dışlanacağını garanti edemez.</li>
+        <li><span class="letter">e</span> Üçüncü taraf reklamları görüntüleyen bir uygulama sürümünü kullanmaya devam etmeyi seçerek, bu reklamların editoryal kontrolümüz dışında olduğunu kabul ve beyan edersiniz. Üçüncü taraf reklamlarına hiç maruz kalmamayı tercih ederseniz, Bölüm 7'de açıklanan <strong>Ömür Boyu Reklam Kaldırma Satın Alımı</strong> dilediğiniz zaman sizin için kullanılabilir durumdadır.</li>
+        <li><span class="letter">f</span> Uygunsuz veya saldırgan olduğunu düşündüğünüz bir reklamla karşılaşırsanız, reklam ortaklarımıza bildirebilmemiz için lütfen bizimle iletişime geçin.</li>
+      </ul>
+      <div class="callout">
+        Reklamsız bir deneyim tercih eden kullanıcılar, Bölüm 7'de açıklanan <strong>Ömür Boyu Reklam Kaldırma Satın Alımı</strong> seçeneğini kullanabilirler.
+      </div>
+    </section>
+
+    <section id="purchase">
+      <h2>7. Ömür Boyu Reklam Kaldırma Satın Alımı</h2>
+      <span class="feature-tag">Uygulama İçi Satın Alma</span>
+      <p>Uygulama içinde, tüm reklamları kaldıran ve aksi takdirde kilitli olan belirli premium özellikleri açan tek seferlik bir satın alma işlemi mevcuttur. Maliyet, uygulama içi satın alma sayfasında ayrıntılı olarak belirtilmiştir. Satın alındığında, reklamsız deneyime ve bu satın alma işlemine dahil olan kilidi açılmış özelliklere ömür boyu erişiminiz olacaktır.</p>
+      <div class="callout">
+        <strong>Lütfen dikkat:</strong>
+        <ul style="margin-top:8px;">
+          <li>Ömür boyu satın alma işlemi yinelenmez ve yenileme gerektirmez.</li>
+          <li>Bu satın alma Google Play Store hesabınıza bağlıdır ve başka hesaplara veya sistemlere aktarılamaz. Yalnızca satın alma işlemini yapan hesaba bağlı Android cihazlarda geçerlidir.</li>
+          <li>Ömür boyu satın alımlar için geri ödemeler, Google Play Store'un geri ödeme politikalarına tabidir. Uygunluk ve talimatlar için lütfen politikalarını inceleyin.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="transfer">
+      <h2>8. Devir</h2>
+      <p>Bu Koşullar kapsamındaki haklarımızı ve yükümlülüklerimizi başka bir kuruluşa devredebiliriz. Sizi her zaman bilgilendireceğiz ve devrin bu Koşullar kapsamındaki haklarınızı etkilemeyeceğinden emin olacağız.</p>
+    </section>
+
+    <section id="termination">
+      <h2>9. Fesih</h2>
+      <p>Bu Koşullar, uygulamalarımızı kullandığınız süre boyunca geçerlidir ve bu 8. bölüme uygun olarak feshedilene kadar tam olarak yürürlükte kalacaktır.</p>
+      <p>Uygulamalarımızı kullanımınızı, herhangi bir nedenle, sınırlama olmaksızın bu sözleşmeyi ihlal etmeniz dahil olmak üzere, önceden bildirimde bulunmaksızın veya sorumluluk üstlenmeksizin derhal feshedebilir veya askıya alabiliriz. Bu koşulları, uygulamalarımızı kullanmayı bırakarak ve bunları cihazınızdan silerek veya kaldırarak feshedebilirsiniz. Ancak, bu sözleşmenin feshinden sonra bile, aşağıdaki bölümler geçerli olmaya devam edecektir: 4, 5, 6, 8, 9 ve 10.</p>
+    </section>
+
+    <section id="liability">
+      <h2>10. Sorumluluk</h2>
+      <p>Bu koşullardan veya bunlarla bağlantılı olarak ortaya çıkan doğrudan zararlar için toplam sorumluluğumuzu, herhangi bir takvim yılında meydana gelen tüm olaylarla ilgili olarak — sözleşmede, haksız fiilde (ihmal dahil), yasal yükümlülüğün ihlalinde veya başka bir şekilde olsun — uygulamaya ilişkin olarak tarafınızca bize ödenen ve ödenmesi gereken ücretlerin %100'ü ile sınırlıyoruz.</p>
+      <div class="strong-notice">
+        UYGULAMALARIMIZ YALNIZCA EV VE ÖZEL KULLANIM İÇİNDİR. UYGULAMALARIMIZI TİCARİ, İŞ VEYA YENİDEN SATIŞ AMACIYLA KULLANIRSANIZ, KAR KAYBI, İŞ KAYBI, İŞ KESİNTİSİ VEYA İŞ FIRSATI KAYBI İÇİN SİZE KARŞI HİÇBİR SORUMLULUĞUMUZ OLMAYACAKTIR.
+      </div>
+    </section>
+
+    <section id="privacy">
+      <h2>11. Gizlilik Politikası</h2>
+      <p>Kişisel bilgilerinizin korunması bizim için büyük önem taşır. Bu koşullara ek olarak, bir Gizlilik Politikası da yayınladık. Bu koşulların bir parçası olmasa da, bilgilerinizi nasıl güncelleyebileceğinizi, yönetebileceğinizi, dışa aktarabileceğinizi ve silebileceğinizi daha iyi anlamak için okumanızı öneririz.</p>
+    </section>
+
+    <section id="voodoo">
+      <h2>12. İsteğe Bağlı Voodoo Modu</h2>
+      <span class="feature-tag">İsteğe Bağlı Özellik</span>
+      <p>Uygulamamız, yalnızca eğlence ve estetik amaçlarla, hafif korku esintili görsel ve işitsel öğelerle uygulamanın arayüzünü dönüştüren, sanatçı tasarımı benzersiz bir karanlık tema olan isteğe bağlı bir <strong>Voodoo Modu</strong> içerir. Bu mod tamamen isteğe bağlıdır, varsayılan olarak devre dışıdır ve küçük çocuklar veya rahatsız edici görüntülere ya da sese karşı hassas olabilecek kullanıcılar için tasarlanmamıştır.</p>
+      <div class="callout warn">
+        <strong>Lütfen dikkat:</strong> Voodoo Modunu etkinleştirmeyi seçerek, içeriğinin doğasını kabul etmiş ve kullanımının sorumluluğunu üstlenmiş olursunuz. Ebeveynler ve vasiler, bir çocuğun bu modu etkinleştirmesine izin vermeden önce bu modun uygun olup olmadığına karar vermelidir.
+      </div>
+    </section>
+
+    <section id="disclaimers">
+      <h2>13. Sorumluluk Reddi ve Garantiler</h2>
+      <p>Bu Sözleşmede belirtilenler haricinde, hizmetler ve yazılım <strong>"OLDUĞU GİBİ"</strong> sağlanmaktadır. Hizmetimizi güvenli ve doğru tutmak için her türlü çabayı göstersek de, ihlal etmeme, ticari elverişlilik ve belirli bir amaca uygunluk ile ilgili zımni garantiler dahil olmak üzere tüm garantileri reddediyoruz. Hizmetlerdeki içerik hakkında hiçbir taahhütte bulunmuyoruz.</p>
+      <p>Ayrıca şunlara ilişkin hiçbir garantiyi kabul etmiyoruz:</p>
+      <ol class="list">
+        <li>Hizmetlerin veya yazılımın gereksinimlerinizi karşılayacağı veya sürekli olarak erişilebilir, kesintisiz, zamanında, güvenli veya hatasız olacağı;</li>
+        <li>Hizmetlerin veya yazılımın kullanımından elde edilen sonuçların etkili, doğru veya güvenilir olacağı;</li>
+        <li>Hizmetlerin veya yazılımın kalitesinin beklentilerinizi karşılayacağı;</li>
+        <li>Hizmetlerdeki veya yazılımdaki herhangi bir hata veya kusurun düzeltileceği; veya</li>
+        <li>Hizmetin, sunucularının, içeriğin veya tarafımızdan ya da adımıza gönderilen e-postaların virüslerden, betiklerden, Truva atlarından, solucanlardan, kötü amaçlı yazılımlardan, zaman bombalarından veya diğer zararlı bileşenlerden arınmış olduğu.</li>
+      </ol>
+    </section>
+
+    <section id="general">
+      <h2>14. Genel</h2>
+      <p>Bu koşulların herhangi bir hükmünün yetkili bir mahkeme tarafından geçersiz sayılması durumunda, bu tür bir hükmün geçersizliği, tam olarak yürürlükte kalmaya devam edecek olan bu Şartlar ve Koşulların geri kalan hükümlerinin geçerliliğini etkilemeyecektir.</p>
+      <p>Bu Sözleşmenin koşullarından kaynaklanan, bunlara değinen veya bunlarla ilişkili olan tüm uyuşmazlıklar — söz konusu koşulların yorumlanması ve geçerliliği ile tarafların ilgili hak ve yükümlülükleri dahil — karşılıklı görüşme yoluyla dostane bir şekilde çözülecektir; aksi takdirde aynı hususlar, bir çözüm aramak için davalının ikametgahındaki yetkili mahkeme aracılığıyla çözülecektir.</p>
+      <p>Bu sözleşmenin içeriği hakkında herhangi bir sorunuz varsa veya kullanım sırasında geri bildirimde bulunmanız gerekiyorsa, bizimle şu adresten iletişime geçebilirsiniz:
+        <a class="inline" href="mailto:havisionary.support@gmail.com">havisionary.support@gmail.com</a>.
+      </p>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  © 2026 HA VISIONARY — Spectra Flashlight. Tüm hakları saklıdır.
+</footer>
+
+</body>
+</html>
