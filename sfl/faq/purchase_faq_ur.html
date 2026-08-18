@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>خریداری کے سوالات | Spectra Flashlight</title>
+<style>
+  :root{
+    --bg:#0f1720;
+    --panel:#ffffff;
+    --accent:#2563eb;
+    --accent-light:#eef4ff;
+    --text:#1f2937;
+    --muted:#6b7280;
+    --border:#e5e7eb;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:linear-gradient(180deg,#0f1720 0%, #1e293b 260px, #f3f4f6 260px);
+    color:var(--text);
+    line-height:1.65;
+    direction: rtl;
+    text-align: right;
+  }
+  header{
+    max-width:800px;
+    margin:0 auto;
+    padding:56px 24px 40px;
+    color:#fff;
+    text-align:center;
+  }
+  header .badge{
+    display:inline-block;
+    background:rgba(255,255,255,0.12);
+    padding:6px 16px;
+    border-radius:999px;
+    font-size:13px;
+    letter-spacing:.03em;
+    margin-bottom:16px;
+  }
+  header h1{
+    font-size:32px;
+    margin:0 0 10px;
+    font-weight:700;
+  }
+  header p{
+    color:#cbd5e1;
+    margin:0;
+    font-size:15px;
+  }
+  .container{
+    max-width:800px;
+    margin:-40px auto 60px;
+    background:var(--panel);
+    border-radius:16px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.12);
+    padding:36px 32px 44px;
+  }
+  .search-hint{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:var(--accent-light);
+    border:1px solid #dbe7fe;
+    border-radius:10px;
+    padding:14px 18px;
+    margin-bottom:28px;
+    font-size:14px;
+    color:#1e40af;
+  }
+  .search-hint svg{ flex-shrink:0; }
+  .faq-list{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .faq-item{
+    border:1px solid var(--border);
+    border-radius:12px;
+    overflow:hidden;
+    background:#fff;
+    transition:border-color .15s ease;
+  }
+  .faq-item.open{
+    border-color:var(--accent);
+  }
+  .faq-question{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    width:100%;
+    text-align:right;
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:18px 20px;
+    font-size:15.5px;
+    font-weight:600;
+    color:#111827;
+    font-family:inherit;
+  }
+  .faq-question:hover{
+    background:#fafbfc;
+  }
+  .q-icon{
+    flex-shrink:0;
+    width:30px;
+    height:30px;
+    border-radius:8px;
+    background:var(--accent-light);
+    color:var(--accent);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:15px;
+    font-weight:700;
+  }
+  .q-text{ flex:1; }
+  .chevron{
+    flex-shrink:0;
+    width:18px;
+    height:18px;
+    color:var(--muted);
+    transition:transform .2s ease;
+  }
+  .faq-item.open .chevron{
+    transform:rotate(180deg);
+    color:var(--accent);
+  }
+  .faq-answer-wrap{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .25s ease;
+  }
+  .faq-item.open .faq-answer-wrap{
+    max-height:300px;
+  }
+  .faq-answer{
+    padding:0 64px 20px 20px;
+    font-size:14.5px;
+    color:#4b5563;
+  }
+  footer{
+    text-align:center;
+    padding:30px 20px 50px;
+    color:var(--muted);
+    font-size:13px;
+  }
+  footer a{ color:var(--accent); text-decoration:none; }
+  @media (max-width:640px){
+    .container{ padding:28px 20px 36px; }
+    header h1{ font-size:26px; }
+    .faq-answer{ padding-right:20px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="badge">Spectra Flashlight · معاونت</div>
+  <h1>خریداری کے سوالات</h1>
+  <p>پرو ورژن کی خریداری کے بارے میں وہ سب کچھ جو آپ کو جاننے کی ضرورت ہے</p>
+</header>
+
+<div class="container">
+
+  <div class="search-hint">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+    جواب دیکھنے کے لیے نیچے کسی بھی سوال پر ٹیپ کریں۔ کیا آپ کو اب بھی مدد درکار ہے؟ <a href="mailto:havisionary.support@gmail.com" style="color:#1e40af;font-weight:600;">havisionary.support@gmail.com</a> پر رابطہ کریں۔
+  </div>
+
+  <div class="faq-list" id="faqList">
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">1</span>
+        <span class="q-text">مفت ورژن اور پرو میں کیا فرق ہے؟</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">پرو ورژن تمام خصوصیات کو مستقل طور پر کھول دیتا ہے اور اشتہارات کو ہٹا دیتا ہے۔ مفت ورژن میں کچھ حدود اور اشتہارات شامل ہیں۔</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">2</span>
+        <span class="q-text">میں نے ادائیگی کر دی، لیکن پرو فعال نہیں ہوا۔</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">براہ کرم ایک یا دو منٹ انتظار کریں، پھر ایپ کو دوبارہ شروع کریں۔ اگر مسئلہ برقرار رہتا ہے، تو <strong>خریداری بحال کریں (Restore Purchases)</strong> پر ٹیپ کریں۔</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">3</span>
+        <span class="q-text">میں نے پرو خریدا، پھر ایپ کو ان انسٹال کر دیا۔ کیا مجھے دوبارہ ادائیگی کرنی ہوگی؟</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">نہیں۔ اسی گوگل اکاؤنٹ کا استعمال کرتے ہوئے ایپ کو دوبارہ انسٹال کریں جسے آپ نے خریداری کے لیے استعمال کیا تھا، پھر اگر ضرورت ہو تو <strong>خریداری بحال کریں (Restore Purchases)</strong> پر ٹیپ کریں۔</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">4</span>
+        <span class="q-text">میں نے اپنا فون تبدیل کر لیا ہے۔ کیا میں پرو کھو دوں گا؟</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">نہیں۔ جب تک آپ وہی گوگل اکاؤنٹ استعمال کر رہے ہیں جس نے خریداری کی تھی، آپ پرو کو بغیر کسی اضافی قیمت کے بحال کر سکتے ہیں۔</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">5</span>
+        <span class="q-text">خریداری کا بٹن کام نہیں کر رہا۔</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">یقینی بنائیں کہ آپ انٹرنیٹ سے منسلک ہیں اور گوگل پلے اسٹور اپ ٹو ڈیٹ ہے، پھر دوبارہ کوشش کریں۔</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">6</span>
+        <span class="q-text">مجھے یہ پیغام کیوں نظر آتا ہے "آئٹم دستیاب نہیں ہے"؟</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">ہو سکتا ہے کہ پروڈکٹ آپ کے ملک میں دستیاب نہ ہو، یا ایپ گوگل پلے سے انسٹال نہ کی گئی ہو۔</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">7</span>
+        <span class="q-text">مجھ سے غلطی سے دو بار چارج لیا گیا ہے۔</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">لائف ٹائم خریداری ایک ہی گوگل اکاؤنٹ کے ساتھ دو بار نہیں خریدی جا سکتی۔ اگر آپ کو لگتا ہے کہ ادائیگی کا مسئلہ ہوا ہے، تو براہ کرم اپنی گوگل پلے خریداری کی تاریخ دیکھیں۔</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">8</span>
+        <span class="q-text">کیا میں ایک سے زیادہ ڈیوائسز پر پرو استعمال کر سکتا ہوں؟</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">جی ہاں۔ آپ پرو کو کسی بھی ڈیوائس پر استعمال کر سکتے ہیں جو اسی گوگل اکاؤنٹ کے ساتھ سائن ان ہو جسے خریداری کے لیے استعمال کیا گیا تھا۔</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">9</span>
+        <span class="q-text">کیا مجھے پرو استعمال کرنے کے لیے انٹرنیٹ کنکشن کی ضرورت ہے؟</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">نہیں۔ ایک بار جب پرو فعال ہو جائے، تو یہ آف لائن کام کرتا ہے۔ تاہم، آپ کی خریداری کو بحال کرنے کے لیے انٹرنیٹ کنکشن کی ضرورت ہو سکتی ہے۔</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">10</span>
+        <span class="q-text">کیا میں پرو کو دوسرے گوگل اکاؤنٹ میں منتقل کر سکتا ہوں؟</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">نہیں۔ خریداریاں مستقل طور پر اس گوگل اکاؤنٹ سے منسلک ہوتی ہیں جس کا استعمال انہیں خریدنے کے لیے کیا گیا تھا۔</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">11</span>
+        <span class="q-text">میں ریفنڈ کی درخواست کیسے کر سکتا ہوں؟</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">گوگل پلے اسٹور کھولیں، اپنی آرڈر ہسٹری میں اپنی خریداری تلاش کریں، پھر ریفنڈ کی درخواست کریں اگر یہ آپشن دستیاب ہو۔ ریفنڈز گوگل کی ریفنڈ پالیسی کے تابع ہیں۔</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  © 2026 HA VISIONARY — Spectra Flashlight. جملہ حقوق محفوظ ہیں۔
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.closest('.faq-item');
+      item.classList.toggle('open');
+    });
+  });
+</script>
+
+</body>
+</html>
