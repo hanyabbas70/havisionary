@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Câu hỏi thường gặp về mua hàng | Spectra Flashlight</title>
+<style>
+  :root{
+    --bg:#0f1720;
+    --panel:#ffffff;
+    --accent:#2563eb;
+    --accent-light:#eef4ff;
+    --text:#1f2937;
+    --muted:#6b7280;
+    --border:#e5e7eb;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:linear-gradient(180deg,#0f1720 0%, #1e293b 260px, #f3f4f6 260px);
+    color:var(--text);
+    line-height:1.65;
+  }
+  header{
+    max-width:800px;
+    margin:0 auto;
+    padding:56px 24px 40px;
+    color:#fff;
+    text-align:center;
+  }
+  header .badge{
+    display:inline-block;
+    background:rgba(255,255,255,0.12);
+    padding:6px 16px;
+    border-radius:999px;
+    font-size:13px;
+    letter-spacing:.03em;
+    margin-bottom:16px;
+  }
+  header h1{
+    font-size:32px;
+    margin:0 0 10px;
+    font-weight:700;
+  }
+  header p{
+    color:#cbd5e1;
+    margin:0;
+    font-size:15px;
+  }
+  .container{
+    max-width:800px;
+    margin:-40px auto 60px;
+    background:var(--panel);
+    border-radius:16px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.12);
+    padding:36px 32px 44px;
+  }
+  .search-hint{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:var(--accent-light);
+    border:1px solid #dbe7fe;
+    border-radius:10px;
+    padding:14px 18px;
+    margin-bottom:28px;
+    font-size:14px;
+    color:#1e40af;
+  }
+  .search-hint svg{ flex-shrink:0; }
+  .faq-list{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .faq-item{
+    border:1px solid var(--border);
+    border-radius:12px;
+    overflow:hidden;
+    background:#fff;
+    transition:border-color .15s ease;
+  }
+  .faq-item.open{
+    border-color:var(--accent);
+  }
+  .faq-question{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    width:100%;
+    text-align:left;
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:18px 20px;
+    font-size:15.5px;
+    font-weight:600;
+    color:#111827;
+    font-family:inherit;
+  }
+  .faq-question:hover{
+    background:#fafbfc;
+  }
+  .q-icon{
+    flex-shrink:0;
+    width:30px;
+    height:30px;
+    border-radius:8px;
+    background:var(--accent-light);
+    color:var(--accent);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:15px;
+    font-weight:700;
+  }
+  .q-text{ flex:1; }
+  .chevron{
+    flex-shrink:0;
+    width:18px;
+    height:18px;
+    color:var(--muted);
+    transition:transform .2s ease;
+  }
+  .faq-item.open .chevron{
+    transform:rotate(180deg);
+    color:var(--accent);
+  }
+  .faq-answer-wrap{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .25s ease;
+  }
+  .faq-item.open .faq-answer-wrap{
+    max-height:300px;
+  }
+  .faq-answer{
+    padding:0 20px 20px 64px;
+    font-size:14.5px;
+    color:#4b5563;
+  }
+  footer{
+    text-align:center;
+    padding:30px 20px 50px;
+    color:var(--muted);
+    font-size:13px;
+  }
+  footer a{ color:var(--accent); text-decoration:none; }
+  @media (max-width:640px){
+    .container{ padding:28px 20px 36px; }
+    header h1{ font-size:26px; }
+    .faq-answer{ padding-left:20px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="badge">Spectra Flashlight · Hỗ trợ</div>
+  <h1>Câu hỏi thường gặp về mua hàng</h1>
+  <p>Mọi điều bạn cần biết về việc mua phiên bản Pro</p>
+</header>
+
+<div class="container">
+
+  <div class="search-hint">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+    Nhấn vào bất kỳ câu hỏi nào bên dưới để xem câu trả lời. Bạn vẫn gặp khó khăn? Hãy liên hệ qua <a href="mailto:havisionary.support@gmail.com" style="color:#1e40af;font-weight:600;">havisionary.support@gmail.com</a>.
+  </div>
+
+  <div class="faq-list" id="faqList">
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">1</span>
+        <span class="q-text">Sự khác biệt giữa bản Miễn phí và bản Pro là gì?</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">Bản Pro mở khóa vĩnh viễn tất cả tính năng và loại bỏ quảng cáo. Bản Miễn phí có một số hạn chế và chứa quảng cáo.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">2</span>
+        <span class="q-text">Tôi đã thanh toán nhưng bản Pro chưa được kích hoạt.</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">Vui lòng đợi một hoặc hai phút, sau đó khởi động lại ứng dụng. Nếu vấn đề vẫn tiếp diễn, hãy nhấn <strong>Khôi phục giao dịch (Restore Purchases)</strong>.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">3</span>
+        <span class="q-text">Tôi đã mua bản Pro, sau đó gỡ cài đặt ứng dụng. Tôi có phải trả phí lần nữa không?</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">Không. Hãy cài đặt lại ứng dụng bằng chính tài khoản Google bạn đã dùng để mua, sau đó nhấn <strong>Khôi phục giao dịch</strong> nếu cần.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">4</span>
+        <span class="q-text">Tôi đổi điện thoại mới. Tôi có bị mất bản Pro không?</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">Không. Miễn là bạn sử dụng cùng tài khoản Google đã thực hiện giao dịch, bạn có thể khôi phục bản Pro mà không mất thêm phí.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">5</span>
+        <span class="q-text">Nút mua hàng không hoạt động.</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">Hãy đảm bảo bạn đã kết nối internet và ứng dụng Google Play Store đã được cập nhật, sau đó thử lại.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">6</span>
+        <span class="q-text">Tại sao tôi thấy thông báo "Mục không khả dụng" (Item not available)?</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">Sản phẩm có thể không khả dụng tại quốc gia của bạn, hoặc ứng dụng có thể chưa được cài đặt từ Google Play.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">7</span>
+        <span class="q-text">Tôi bị tính phí hai lần do nhầm lẫn.</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">Giao dịch mua trọn đời không thể thực hiện hai lần bằng cùng một tài khoản Google. Nếu bạn cho rằng có vấn đề thanh toán, vui lòng kiểm tra lịch sử mua hàng trên Google Play.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">8</span>
+        <span class="q-text">Tôi có thể sử dụng bản Pro trên nhiều thiết bị không?</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">Có. Bạn có thể sử dụng bản Pro trên bất kỳ thiết bị nào đăng nhập bằng cùng tài khoản Google đã dùng để mua.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">9</span>
+        <span class="q-text">Tôi có cần kết nối internet để sử dụng bản Pro không?</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">Không. Sau khi đã kích hoạt, bản Pro hoạt động ngoại tuyến. Tuy nhiên, kết nối internet có thể cần thiết để khôi phục giao dịch mua của bạn.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">10</span>
+        <span class="q-text">Tôi có thể chuyển bản Pro sang tài khoản Google khác không?</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">Không. Giao dịch mua được liên kết vĩnh viễn với tài khoản Google đã dùng để mua.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">11</span>
+        <span class="q-text">Làm thế nào để yêu cầu hoàn tiền?</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">Mở Google Play Store, tìm giao dịch mua của bạn trong lịch sử đơn hàng, sau đó yêu cầu hoàn tiền nếu có tùy chọn. Việc hoàn tiền tuân theo chính sách của Google.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  © 2026 HA VISIONARY — Spectra Flashlight. Tất cả các quyền được bảo lưu.
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.closest('.faq-item');
+      item.classList.toggle('open');
+    });
+  });
+</script>
+
+</body>
+</html>
