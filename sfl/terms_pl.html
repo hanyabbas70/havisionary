@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Warunki korzystania | Spectra Flashlight</title>
+<style>
+  :root{
+    --bg:#0f1720;
+    --panel:#ffffff;
+    --accent:#2563eb;
+    --accent-light:#eef4ff;
+    --text:#1f2937;
+    --muted:#6b7280;
+    --border:#e5e7eb;
+    --warn:#b45309;
+    --warn-bg:#fffbeb;
+    --warn-border:#fde68a;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:linear-gradient(180deg,#0f1720 0%, #1e293b 260px, #f3f4f6 260px);
+    color:var(--text);
+    line-height:1.65;
+  }
+  header{
+    max-width:900px;
+    margin:0 auto;
+    padding:56px 24px 40px;
+    color:#fff;
+    text-align:center;
+  }
+  header .badge{
+    display:inline-block;
+    background:rgba(255,255,255,0.12);
+    padding:6px 16px;
+    border-radius:999px;
+    font-size:13px;
+    letter-spacing:.03em;
+    margin-bottom:16px;
+  }
+  header h1{
+    font-size:32px;
+    margin:0 0 10px;
+    font-weight:700;
+  }
+  header p{
+    color:#cbd5e1;
+    margin:0;
+    font-size:15px;
+  }
+  .container{
+    max-width:900px;
+    margin:-40px auto 60px;
+    background:var(--panel);
+    border-radius:16px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.12);
+    padding:0;
+    overflow:hidden;
+  }
+  .toc{
+    background:var(--accent-light);
+    padding:28px 32px;
+    border-bottom:1px solid var(--border);
+  }
+  .toc h2{
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    color:var(--accent);
+    margin:0 0 14px;
+  }
+  .toc ol{
+    margin:0;
+    padding-left:20px;
+    columns:2;
+    gap:24px;
+  }
+  .toc li{
+    margin-bottom:8px;
+    font-size:14.5px;
+  }
+  .toc a{
+    color:var(--text);
+    text-decoration:none;
+  }
+  .toc a:hover{
+    color:var(--accent);
+    text-decoration:underline;
+  }
+  main{
+    padding:36px 40px 50px;
+  }
+  section{
+    margin-bottom:36px;
+    scroll-margin-top:20px;
+  }
+  section h2{
+    font-size:20px;
+    color:#111827;
+    border-left:4px solid var(--accent);
+    padding-left:12px;
+    margin:0 0 14px;
+  }
+  p{
+    margin:0 0 12px;
+    color:#374151;
+    font-size:15px;
+  }
+  a.inline{
+    color:var(--accent);
+    text-decoration:none;
+    word-break:break-word;
+  }
+  a.inline:hover{ text-decoration:underline; }
+  ul, ol.list{
+    margin:0 0 12px;
+    padding-left:22px;
+  }
+  ul li, ol.list li{
+    margin-bottom:6px;
+    font-size:15px;
+    color:#374151;
+  }
+  .restriction-list{
+    list-style:none;
+    padding:0;
+    margin:0 0 12px;
+    display:grid;
+    gap:8px;
+  }
+  .restriction-list li{
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+    background:#f9fafb;
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:10px 14px;
+    font-size:14.5px;
+    color:#374151;
+  }
+  .restriction-list .letter{
+    flex-shrink:0;
+    width:22px;
+    height:22px;
+    border-radius:6px;
+    background:var(--accent);
+    color:#fff;
+    font-size:12px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .callout{
+    background:#f9fafb;
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:16px 20px;
+    margin:14px 0;
+    font-size:14.5px;
+    color:#4b5563;
+  }
+  .callout.warn{
+    background:var(--warn-bg);
+    border-color:var(--warn-border);
+    color:#92400e;
+  }
+  .callout.warn strong{ color:var(--warn); }
+  .strong-notice{
+    background:#111827;
+    color:#f9fafb;
+    border-radius:10px;
+    padding:18px 20px;
+    margin:14px 0;
+    font-size:14px;
+    letter-spacing:.01em;
+  }
+  .feature-tag{
+    display:inline-block;
+    background:var(--accent-light);
+    color:var(--accent);
+    font-size:12px;
+    font-weight:600;
+    padding:3px 10px;
+    border-radius:999px;
+    margin-bottom:10px;
+  }
+  footer{
+    text-align:center;
+    padding:30px 20px 50px;
+    color:var(--muted);
+    font-size:13px;
+  }
+  footer a{ color:var(--accent); text-decoration:none; }
+  @media (max-width:640px){
+    .toc ol{ columns:1; }
+    main{ padding:28px 22px 40px; }
+    header h1{ font-size:26px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="badge">Spectra Flashlight · Prawne</div>
+  <h1>Warunki korzystania</h1>
+  <p>Ostatnia aktualizacja i data wejścia w życie: 1 maja 2026 r.</p>
+</header>
+
+<div class="container">
+
+  <div class="toc">
+    <h2>Spis treści</h2>
+    <ol>
+      <li><a href="#intro">Wstęp i akceptacja</a></li>
+      <li><a href="#updates">Aktualizacje</a></li>
+      <li><a href="#restrictions">Ograniczenia</a></li>
+      <li><a href="#ip">Własność intelektualna</a></li>
+      <li><a href="#thirdparty">Linki do stron trzecich</a></li>
+      <li><a href="#advertising">Reklamy</a></li>
+      <li><a href="#purchase">Dożywotnie usunięcie reklam</a></li>
+      <li><a href="#transfer">Przeniesienie praw</a></li>
+      <li><a href="#termination">Wypowiedzenie</a></li>
+      <li><a href="#liability">Odpowiedzialność</a></li>
+      <li><a href="#privacy">Polityka prywatności</a></li>
+      <li><a href="#voodoo">Opcjonalny tryb Voodoo</a></li>
+      <li><a href="#disclaimers">Wyłączenia odpowiedzialności i gwarancje</a></li>
+      <li><a href="#general">Postanowienia ogólne</a></li>
+    </ol>
+  </div>
+
+  <main>
+
+    <section id="intro">
+      <h2>1. Wstęp i akceptacja</h2>
+      <p>Niniejsze Warunki korzystania stanowią umowę pomiędzy "HA VISIONARY" a użytkownikiem, informującą o prawach użytkownika i naszych prawach dotyczących korzystania z naszych aplikacji.</p>
+      <p>Prosimy o uważne przeczytanie tych warunków, ponieważ korzystając z naszych usług, użytkownik oświadcza, że zapoznał się z nimi, zrozumiał je i zgadza się nimi związać. Jeśli użytkownik nie zgadza się ze wszystkimi tymi warunkami, nie może korzystać z naszych aplikacji.</p>
+    </section>
+
+    <section id="updates">
+      <h2>2. Aktualizacje</h2>
+      <p>Warunki te mogą być okresowo modyfikowane. W przypadku dokonania istotnych zmian powiadomimy użytkownika, a zmiany te wejdą w życie w momencie aktualizacji naszych warunków. Dalsze korzystanie z aplikacji będzie uznawane za akceptację modyfikacji. Nie jesteśmy zobowiązani do informowania użytkownika o zmianach w niniejszych warunkach, które wynikają z drobnych poprawek lub korekt. Dlatego prosimy o regularne sprawdzanie tych warunków, aby mieć pewność, że użytkownik jest na bieżąco ze wszelkimi zmianami.</p>
+      <p>Ponadto możemy automatycznie aktualizować nasze aplikacje, aby poprawić wydajność, zwiększyć funkcjonalność, odzwierciedlić zmiany w systemie operacyjnym lub rozwiązać problemy związane z bezpieczeństwem. Jeśli użytkownik zdecyduje się nie instalować takich aktualizacji lub zrezygnuje z automatycznych aktualizacji, może nie mieć możliwości dalszego korzystania z naszych aplikacji.</p>
+    </section>
+
+    <section id="restrictions">
+      <h2>3. Ograniczenia</h2>
+      <p>O ile użytkownik nie wystąpił o naszą uprzednią pisemną zgodę i jej nie otrzymał, lub o ile nie jest to wyraźnie dozwolone w niniejszych Warunkach, użytkownik nie może:</p>
+      <ul class="restriction-list">
+        <li><span class="letter">a</span> Kopiować naszych aplikacji, z wyjątkiem przypadków stanowiących część normalnego użytkowania naszych aplikacji lub gdy jest to niezbędne do tworzenia kopii zapasowych lub celów bezpieczeństwa operacyjnego.</li>
+        <li><span class="letter">b</span> Modyfikować lub tłumaczyć naszych aplikacji w całości lub w części, ani łączyć lub scalać naszej aplikacji z jakimkolwiek innym kodem obiektowym lub programem.</li>
+        <li><span class="letter">c</span> Inżynierii odwrotnej, dekompilacji, dezasemblacji, redukcji kodu obiektowego naszych aplikacji do postaci kodu źródłowego ani tworzyć (lub próbować tworzyć) dzieł pochodnych na podstawie całości lub części naszych aplikacji, z wyjątkiem zakresu dozwolonego przez obowiązujące prawo.</li>
+        <li><span class="letter">d</span> Dystrybuować, udzielać sublicencji, cedować, udostępniać, dzierżawić, sprzedawać, wynajmować, ustanawiać zastawu, wykorzystywać do celów usług biurowych ani w inny sposób przekazywać naszych aplikacji lub praw użytkownika do korzystania z nich.</li>
+        <li><span class="letter">e</span> Usuwać, modyfikować, blokować, wyłączać, zasłaniać ani naruszać jakichkolwiek praw autorskich, znaków towarowych lub innych informacji o własności, materiałów lub reklam należących do nas, naszych licencjodawców lub innych stron trzecich zawartych w naszych aplikacjach.</li>
+        <li><span class="letter">f</span> Włączać naszych aplikacji do innych usług lub witryn internetowych, ani udostępniać ich za pośrednictwem technik framingu lub mirroringu.</li>
+        <li><span class="letter">g</span> Wydobywać jakichkolwiek danych lub metadanych z naszych aplikacji, ani tworzyć indeksów lub baz danych zawierających ich części.</li>
+        <li><span class="letter">h</span> Podejmować jakichkolwiek działań, które mogłyby spowodować uszkodzenie naszych aplikacji.</li>
+        <li><span class="letter">i</span> Prowadzić jakichkolwiek szkodliwych lub nielegalnych działań przy użyciu naszych aplikacji.</li>
+        <li><span class="letter">j</span> Korzystać z naszych aplikacji w jakikolwiek sposób, który nie jest wyraźnie dozwolony przez niniejsze Warunki.</li>
+      </ul>
+      <p>W przeciwnym razie użytkownik zobowiązany jest do zrekompensowania nam wszelkich strat (w tym kosztów obsługi prawnej), które poniesiemy w wyniku powyższego naruszenia.</p>
+    </section>
+
+    <section id="ip">
+      <h2>4. Własność intelektualna</h2>
+      <p>Zachowujemy wyłączne prawa własności do naszych aplikacji, treści aplikacji i powiązanej dokumentacji na całym świecie, które należą do nas i naszych licencjodawców.</p>
+      <p>Nasze aplikacje są chronione prawem autorskim, znakami towarowymi i innymi przepisami. Nasze prawa własności intelektualnej nie mogą być wykorzystywane w związku z żadnym produktem lub usługą bez naszej uprzedniej pisemnej zgody. Wszelka sprzedaż, modyfikacja, dystrybucja, kopiowanie, reprodukcja, transmisja, publiczne wyświetlanie, tworzenie dzieł pochodnych lub wykorzystywanie w celach komercyjnych naszych aplikacji lub treści naszych licencjodawców jest niedozwolone.</p>
+    </section>
+
+    <section id="thirdparty">
+      <h2>5. Linki do stron trzecich</h2>
+      <p>Użytkownik przyjmuje do wiadomości, że nasze aplikacje mogą zawierać linki do stron internetowych osób trzecich (za pośrednictwem reklam lub w inny sposób), które nie są naszą własnością ani nie są przez nas kontrolowane. Linki te są dostarczane wyłącznie dla wygody użytkownika. Nie kontrolujemy takich witryn i nie ponosimy odpowiedzialności za ich zawartość ani sposób, w jaki użytkownik z nich korzysta.</p>
+      <p>Uzyskując dostęp do takich treści, użytkownik przyjmuje do wiadomości, co następuje:</p>
+      <ol class="list">
+        <li>Użytkownik jest odpowiedzialny za sprawdzenie i przestrzeganie obowiązujących warunków licencji (np. licencji MIT) regulujących powiązane zasoby.</li>
+        <li>Nie ponosimy odpowiedzialności za korzystanie przez użytkownika z zasobów osób trzecich ani za jakiekolwiek roszczenia, które mogą wynikać z nieprzestrzegania przez użytkownika wymogów licencyjnych tych osób trzecich.</li>
+      </ol>
+    </section>
+
+    <section id="advertising">
+      <h2>6. Reklamy</h2>
+      <p>Nasze aplikacje mogą wyświetlać reklamy dostarczane przez sieci reklamowe i partnerów zewnętrznych, w tym między innymi Google AdMob. Reklamy te są generowane i wyświetlane przez podmioty trzecie w oparciu o ich własne algorytmy i polityki treści. <strong>Nie mamy żadnej kontroli redakcyjnej</strong> nad tym, jaka konkretna reklama jest wyświetlana poszczególnemu użytkownikowi w danym momencie, i nie tworzymy, nie piszemy, nie projektujemy ani nie sprawdzamy poszczególnych reklam przed ich wyświetleniem.</p>
+      <p>W związku z tym:</p>
+      <ul class="restriction-list">
+        <li><span class="letter">a</span> Nie ponosimy odpowiedzialności za dokładność, legalność ani stosowność jakichkolwiek reklamowanych treści, produktów lub usług.</li>
+        <li><span class="letter">b</span> Nie ponosimy odpowiedzialności za jakiekolwiek transakcje, komunikację lub interakcje, jakie użytkownik może nawiązać z reklamodawcą lub z jakąkolwiek witryną internetową dostępną za pośrednictwem reklamy.</li>
+        <li><span class="letter">c</span> Biorąc pod uwagę różnorodność naszej globalnej bazy użytkowników, niektóre reklamy mogą czasami odzwierciedlać treści, produkty lub komunikaty, które nie są zgodne z wartościami religijnymi, kulturowymi lub osobistymi niektórych użytkowników, w tym m.in. z wartościami i zasadami islamskimi. Nie popieramy, nie wybieramy ani nie zamierzamy wyświetlać takich treści i zrzekamy się wszelkiej odpowiedzialności — religijnej, moralnej lub innej — wynikającej z reklam wyświetlanych przez zewnętrzne sieci reklamowe.</li>
+        <li><span class="letter">d</span> Podejmujemy rozsądne i technicznie dostępne środki — w tym blokowanie kategorii treści i ustawienia maksymalnej oceny treści reklam oferowane przez naszych partnerów reklamowych — aby zmniejszyć prawdopodobieństwo wyświetlania nieodpowiednich lub obraźliwych reklam. Jednakże środki te są filtrami stosowanymi na poziomie platformy i nie mogą zagwarantować całkowitego wykluczenia jakiegokolwiek określonego rodzaju treści, ponieważ ostateczny wybór reklam pozostaje pod zautomatyzowaną kontrolą sieci zewnętrznej.</li>
+        <li><span class="letter">e</span> Wybierając dalsze korzystanie z wersji aplikacji, która wyświetla reklamy osób trzecich, użytkownik przyjmuje do wiadomości i akceptuje, że reklamy te znajdują się poza naszą kontrolą redakcyjną. Jeśli użytkownik woli w ogóle nie być narażony na reklamy osób trzecich, w każdej chwili może skorzystać z opcji <strong>Dożywotniego usunięcia reklam</strong> opisanej w sekcji 7.</li>
+        <li><span class="letter">f</span> Jeśli użytkownik napotka reklamę, którą uważa za nieodpowiednią lub obraźliwą, prosimy o kontakt, abyśmy mogli zgłosić ją naszym partnerom reklamowym.</li>
+      </ul>
+      <div class="callout">
+        Użytkownicy preferujący korzystanie z aplikacji bez reklam mogą skorzystać z opcji <strong>Dożywotniego usunięcia reklam</strong> opisanej w sekcji 7.
+      </div>
+    </section>
+
+    <section id="purchase">
+      <h2>7. Dożywotnie usunięcie reklam</h2>
+      <span class="feature-tag">Zakup wewnątrz aplikacji</span>
+      <p>Wewnątrz aplikacji dostępny jest jednorazowy zakup, który usuwa wszystkie reklamy i odblokowuje niektóre funkcje premium, które w innym przypadku są zablokowane. Koszt został szczegółowo opisany na stronie zakupu wewnątrz aplikacji. Po dokonaniu zakupu użytkownik zyskuje dożywotni dostęp do korzystania z aplikacji bez reklam oraz odblokowanych funkcji zawartych w tym zakupie.</p>
+      <div class="callout">
+        <strong>Uwaga:</strong>
+        <ul style="margin-top:8px;">
+          <li>Zakup dożywotni jest jednorazowy i nie wymaga odnawiania.</li>
+          <li>Zakup ten jest przypisany do konta Google Play Store użytkownika i nie może zostać przeniesiony na inne konta lub systemy. Jest ważny tylko na urządzeniach z systemem Android powiązanych z kontem, z którego dokonano zakupu.</li>
+          <li>Zwroty za zakupy dożywotnie podlegają polityce zwrotów Google Play Store. Prosimy o zapoznanie się z ich polityką w celu uzyskania informacji o zasadach kwalifikacji i instrukcji.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="transfer">
+      <h2>8. Przeniesienie praw</h2>
+      <p>Możemy przenieść nasze prawa i obowiązki wynikające z niniejszych Warunków na inną organizację. Zawsze poinformujemy o tym użytkownika i zapewnimy, że przeniesienie nie wpłynie na jego prawa wynikające z niniejszych Warunków.</p>
+    </section>
+
+    <section id="termination">
+      <h2>9. Wypowiedzenie</h2>
+      <p>Niniejsze Warunki mają zastosowanie i pozostają w pełnej mocy podczas korzystania z naszych aplikacji, aż do momentu ich wypowiedzenia zgodnie z niniejszą sekcją 8.</p>
+      <p>Możemy wypowiedzieć lub zawiesić korzystanie z naszych aplikacji ze skutkiem natychmiastowym, bez wcześniejszego powiadomienia lub odpowiedzialności, z dowolnego powodu, w tym między innymi w przypadku naruszenia niniejszej umowy przez użytkownika. Użytkownik może wypowiedzieć niniejsze warunki, zaprzestając korzystania z naszych aplikacji oraz usuwając je lub odinstalowując z urządzenia. Jednak nawet po zakończeniu niniejszej umowy, następujące sekcje pozostają w mocy: 4, 5, 6, 8, 9 i 10.</p>
+    </section>
+
+    <section id="liability">
+      <h2>10. Odpowiedzialność</h2>
+      <p>Ograniczamy naszą łączną odpowiedzialność za szkody bezpośrednie wynikające z niniejszych warunków lub z nimi związane w odniesieniu do użytkownika, w stosunku do wszystkich zdarzeń występujących w dowolnym roku kalendarzowym — czy to z tytułu umowy, deliktu (w tym zaniedbania), naruszenia obowiązku ustawowego, czy w inny sposób — do 100% opłat zapłaconych i należnych nam z tytułu aplikacji w danym roku kalendarzowym.</p>
+      <div class="strong-notice">
+        NASZE APLIKACJE SĄ PRZEZNACZONE WYŁĄCZNIE DO UŻYTKU DOMOWEGO I PRYWATNEGO. JEŚLI UŻYTKOWNIK KORZYSTA Z NASZYCH APLIKACJI W CELACH KOMERCYJNYCH, BIZNESOWYCH LUB W CELU ODSPRZEDAŻY, NIE PONOSIMY ODPOWIEDZIALNOŚCI ZA JAKIEKOLWIEK UTRACONE ZYSKI, STRATY BIZNESOWE, PRZERWY W DZIAŁALNOŚCI LUB UTRATĘ MOŻLIWOŚCI BIZNESOWYCH.
+      </div>
+    </section>
+
+    <section id="privacy">
+      <h2>11. Polityka prywatności</h2>
+      <p>Ochrona danych osobowych użytkownika ma dla nas ogromne znaczenie. Oprócz niniejszych warunków opublikowaliśmy również Politykę prywatności. Chociaż nie stanowi ona części niniejszych warunków, zachęcamy do jej przeczytania, aby lepiej zrozumieć, w jaki sposób można aktualizować, zarządzać, eksportować i usuwać swoje informacje.</p>
+    </section>
+
+    <section id="voodoo">
+      <h2>12. Opcjonalny tryb Voodoo</h2>
+      <span class="feature-tag">Funkcja opcjonalna</span>
+      <p>Nasza aplikacja zawiera opcjonalny <strong>tryb Voodoo</strong> — charakterystyczny, zaprojektowany przez artystę ciemny motyw, który przekształca interfejs aplikacji za pomocą delikatnych elementów wizualnych i dźwiękowych inspirowanych horrorem, wyłącznie w celach rozrywkowych i estetycznych. Tryb ten jest całkowicie opcjonalny, domyślnie wyłączony i nie jest przeznaczony dla małych dzieci ani użytkowników, którzy mogą być wrażliwi na niepokojące obrazy lub dźwięki.</p>
+      <div class="callout warn">
+        <strong>Uwaga:</strong> Włączając tryb Voodoo, użytkownik przyjmuje do wiadomości charakter jego treści i bierze odpowiedzialność za jego użycie. Rodzice i opiekunowie powinni ustalić, czy ten tryb jest odpowiedni, zanim pozwolą osobie małoletniej na jego włączenie.
+      </div>
+    </section>
+
+    <section id="disclaimers">
+      <h2>13. Wyłączenia odpowiedzialności i gwarancje</h2>
+      <p>Z wyjątkiem przypadków określonych w niniejszej Umowie, usługi i oprogramowanie są dostarczane w stanie <strong>"TAKIM, JAKIM JEST" (AS-IS)</strong>. Chociaż dokładamy wszelkich starań, aby nasze usługi były bezpieczne i dokładne, zrzekamy się wszelkich gwarancji, wyraźnych lub dorozumianych, w tym dorozumianych gwarancji nienaruszalności, przydatności handlowej i przydatności do określonego celu. Nie składamy żadnych zapewnień dotyczących treści zawartych w usługach.</p>
+      <p>Ponadto zrzekamy się wszelkich gwarancji, że:</p>
+      <ol class="list">
+        <li>Usługi lub oprogramowanie spełnią wymagania użytkownika lub będą stale dostępne, nieprzerwane, terminowe, bezpieczne lub wolne od błędów;</li>
+        <li>Wyniki uzyskane z korzystania z usług lub oprogramowania będą skuteczne, dokładne lub niezawodne;</li>
+        <li>Jakość usług lub oprogramowania spełni oczekiwania użytkownika;</li>
+        <li>Wszelkie błędy lub wady w usługach lub oprogramowaniu zostaną naprawione; lub</li>
+        <li>Usługa, jej serwery, treść lub wiadomości e-mail wysyłane od nas lub w naszym imieniu są wolne od wirusów, skryptów, koni trojańskich, robaków, złośliwego oprogramowania, bomb zegarowych lub innych szkodliwych komponentów.</li>
+      </ol>
+    </section>
+
+    <section id="general">
+      <h2>14. Postanowienia ogólne</h2>
+      <p>Jeśli jakiekolwiek postanowienie niniejszych warunków zostanie uznane przez sąd właściwej jurysdykcji za nieważne, nieważność takiego postanowienia nie wpłynie na ważność pozostałych postanowień niniejszego Regulaminu, które pozostaną w pełnej mocy.</p>
+      <p>Wszelkie spory wynikające z niniejszej Umowy lub z nią związane — w tym interpretacja i ważność jej postanowień oraz odpowiednie prawa i obowiązki stron — będą rozstrzygane polubownie w drodze wzajemnych konsultacji. W przypadku braku porozumienia spory będą rozstrzygane przez sąd właściwy dla miejsca zamieszkania pozwanego w celu znalezienia rozwiązania.</p>
+      <p>Jeśli użytkownik ma jakiekolwiek pytania dotyczące treści niniejszej umowy lub chce przekazać nam opinię podczas korzystania z aplikacji, może skontaktować się z nami pod adresem:
+        <a class="inline" href="mailto:havisionary.support@gmail.com">havisionary.support@gmail.com</a>.
+      </p>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  © 2026 HA VISIONARY — Spectra Flashlight. Wszelkie prawa zastrzeżone.
+</footer>
+
+</body>
+</html>
