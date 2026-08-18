@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>شروط الاستخدام | Spectra Flashlight</title>
+<style>
+  :root{
+    --bg:#0f1720;
+    --panel:#ffffff;
+    --accent:#2563eb;
+    --accent-light:#eef4ff;
+    --text:#1f2937;
+    --muted:#6b7280;
+    --border:#e5e7eb;
+    --warn:#b45309;
+    --warn-bg:#fffbeb;
+    --warn-border:#fde68a;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family: Arial, Tahoma, sans-serif;
+    background:linear-gradient(180deg,#0f1720 0%, #1e293b 260px, #f3f4f6 260px);
+    color:var(--text);
+    line-height:1.65;
+    text-align: right;
+  }
+  header{
+    max-width:900px;
+    margin:0 auto;
+    padding:56px 24px 40px;
+    color:#fff;
+    text-align:center;
+  }
+  header .badge{
+    display:inline-block;
+    background:rgba(255,255,255,0.12);
+    padding:6px 16px;
+    border-radius:999px;
+    font-size:13px;
+    letter-spacing:.03em;
+    margin-bottom:16px;
+  }
+  header h1{
+    font-size:32px;
+    margin:0 0 10px;
+    font-weight:700;
+  }
+  header p{
+    color:#cbd5e1;
+    margin:0;
+    font-size:15px;
+  }
+  .container{
+    max-width:900px;
+    margin:-40px auto 60px;
+    background:var(--panel);
+    border-radius:16px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.12);
+    padding:0;
+    overflow:hidden;
+  }
+  .toc{
+    background:var(--accent-light);
+    padding:28px 32px;
+    border-bottom:1px solid var(--border);
+  }
+  .toc h2{
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    color:var(--accent);
+    margin:0 0 14px;
+  }
+  .toc ol{
+    margin:0;
+    padding-right:20px;
+    padding-left:0;
+    columns:2;
+    gap:24px;
+  }
+  .toc li{
+    margin-bottom:8px;
+    font-size:14.5px;
+  }
+  .toc a{
+    color:var(--text);
+    text-decoration:none;
+  }
+  .toc a:hover{
+    color:var(--accent);
+    text-decoration:underline;
+  }
+  main{
+    padding:36px 40px 50px;
+  }
+  section{
+    margin-bottom:36px;
+    scroll-margin-top:20px;
+  }
+  section h2{
+    font-size:20px;
+    color:#111827;
+    border-right:4px solid var(--accent);
+    border-left:none;
+    padding-right:12px;
+    padding-left:0;
+    margin:0 0 14px;
+  }
+  p{
+    margin:0 0 12px;
+    color:#374151;
+    font-size:15px;
+  }
+  a.inline{
+    color:var(--accent);
+    text-decoration:none;
+    word-break:break-word;
+  }
+  a.inline:hover{ text-decoration:underline; }
+  ul, ol.list{
+    margin:0 0 12px;
+    padding-right:22px;
+    padding-left:0;
+  }
+  ul li, ol.list li{
+    margin-bottom:6px;
+    font-size:15px;
+    color:#374151;
+  }
+  .restriction-list{
+    list-style:none;
+    padding:0;
+    margin:0 0 12px;
+    display:grid;
+    gap:8px;
+  }
+  .restriction-list li{
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+    background:#f9fafb;
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:10px 14px;
+    font-size:14.5px;
+    color:#374151;
+  }
+  .restriction-list .letter{
+    flex-shrink:0;
+    width:22px;
+    height:22px;
+    border-radius:6px;
+    background:var(--accent);
+    color:#fff;
+    font-size:12px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .callout{
+    background:#f9fafb;
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:16px 20px;
+    margin:14px 0;
+    font-size:14.5px;
+    color:#4b5563;
+  }
+  .callout.warn{
+    background:var(--warn-bg);
+    border-color:var(--warn-border);
+    color:#92400e;
+  }
+  .callout.warn strong{ color:var(--warn); }
+  .strong-notice{
+    background:#111827;
+    color:#f9fafb;
+    border-radius:10px;
+    padding:18px 20px;
+    margin:14px 0;
+    font-size:14px;
+    letter-spacing:.01em;
+  }
+  .feature-tag{
+    display:inline-block;
+    background:var(--accent-light);
+    color:var(--accent);
+    font-size:12px;
+    font-weight:600;
+    padding:3px 10px;
+    border-radius:999px;
+    margin-bottom:10px;
+  }
+  footer{
+    text-align:center;
+    padding:30px 20px 50px;
+    color:var(--muted);
+    font-size:13px;
+  }
+  footer a{ color:var(--accent); text-decoration:none; }
+  @media (max-width:640px){
+    .toc ol{ columns:1; }
+    main{ padding:28px 22px 40px; }
+    header h1{ font-size:26px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="badge">Spectra Flashlight · الشؤون القانونية</div>
+  <h1>شروط الاستخدام</h1>
+  <p>آخر تحديث ونافذة المفعول اعتباراً من 1 مايو 2026</p>
+</header>
+
+<div class="container">
+
+  <div class="toc">
+    <h2>جدول المحتويات</h2>
+    <ol>
+      <li><a href="#intro">المقدمة والقبول</a></li>
+      <li><a href="#updates">التحديثات</a></li>
+      <li><a href="#restrictions">القيود</a></li>
+      <li><a href="#ip">الملكية الفكرية</a></li>
+      <li><a href="#thirdparty">روابط الأطراف الثالثة</a></li>
+      <li><a href="#purchase">شراء إزالة الإعلانات مدى الحياة</a></li>
+      <li><a href="#transfer">التحويل</a></li>
+      <li><a href="#termination">الإنهاء</a></li>
+      <li><a href="#liability">المسؤولية</a></li>
+      <li><a href="#privacy">سياسة الخصوصية</a></li>
+      <li><a href="#voodoo">وضع فودو الاختياري</a></li>
+      <li><a href="#disclaimers">إخلاء المسؤولية والضمانات</a></li>
+      <li><a href="#general">عام</a></li>
+    </ol>
+  </div>
+
+  <main>
+
+    <section id="intro">
+      <h2>1. المقدمة والقبول</h2>
+      <p>تُشكّل شروط الاستخدام هذه اتفاقية بين "HA VISIONARY" وبينك، والتي توضح حقوقك وحقوقنا المتعلقة باستخدامك لتطبيقاتنا [cite: terms_en.html].</p>
+      <p>يرجى قراءة هذه الشروط بعناية فائقة، لأنه من خلال استخدام خدماتنا، فإنك تقر بأنك قراَت وفهمت ووافقْت على الالتزام بهذه الشروط. إذا كنت لا توافق على كل هذه الشروط، فلا يجوز لك استخدام تطبيقاتنا [cite: terms_en.html].</p>
+    </section>
+
+    <section id="updates">
+      <h2>2. التحديثات</h2>
+      <p>قد يتم تعديل هذه الشروط من وقت لآخر. إذا قمنا بأي تغييرات جوهرية، فسوف نقوم بإخطارك وستصبح هذه التعديلات سارية المفعول في لحظة تحديث شروطنا. يعتبر استمرارك في الاستخدام موافقة على التعديلات. لسنا ملزمين بإخطارك بأي تغييرات على هذه الشروط تنتج عن تعديلات أو تصحيحات طفيفة. لذلك، يرجى مراجعة هذه الشروط بانتظام للتأكد من إدراكك لأي تغييرات [cite: terms_en.html].</p>
+      <p>بالإضافة إلى ذلك، قد نقوم بتحديث تطبيقاتنا بشكل متكرر تلقائياً لتحسين الأداء، أو تعزيز الوظائف، أو عكس التغييرات في نظام التشغيل، أو معالجة مشكلات الأمان. إذا اخترت عدم تثبيت مثل هذه التحديثات، أو إذا اخترت إلغاء الاشتراك في التحديثات التلقائية، فقد لا تتمكن من الاستمرار في استخدام تطبيقاتنا [cite: terms_en.html].</p>
+    </section>
+
+    <section id="restrictions">
+      <h2>3. القيود</h2>
+      <p>ما لم تطلب وتحصل على موافقتنا الخطية المسبقة، أو ما لم يُصرح بذلك صراحة في هذه الشروط، يُحظر عليك ما يلي [cite: terms_en.html]:</p>
+      <ul class="restriction-list">
+        <li><span class="letter">أ</span> نسخ تطبيقاتنا إلا كجزء من الاستخدام العادي لتطبيقاتنا أو حسب الضرورة لإنشاء نسخ احتياطية أو لأغراض أمان التشغيل [cite: terms_en.html].</li>
+        <li><span class="letter">ب</span> تعديل أو ترجمة كل أو جزء من تطبيقنا، أو دمج أو ربط تطبيقنا بأي رمز كائني أو برنامج آخر [cite: terms_en.html].</li>
+        <li><span class="letter">ج</span> الهندسة العكسية، أو تفكيك، أو إلغاء تجميع، أو تقليل الرمز الكائني لتطبيقاتنا إلى شكل رمز المصدر، أو إنشاء (أو محاولة إنشاء) أعمال مشتقة استناداً إلى كل أو أي جزء من تطبيقاتنا، إلا بالقدر الذي يسمح به القانون المعمول به [cite: terms_en.html].</li>
+        <li><span class="letter">د</span> توزيع، أو ترخيص فرعي، أو تعيين، أو مشاركة، أو المشاركة الزمنية، أو بيع، أو تأجير، أو استئجار، أو منح مصلحة أمان، أو استخدام لأغراض مكتب الخدمة، أو نقل تطبيقاتنا أو حقك في استخدام تطبيقاتنا بأي شكل آخر [cite: terms_en.html].</li>
+        <li><span class="letter">هـ</span> إزالة، أو تعديل، أو حظر، أو تعطيل، أو حجب، أو الإضرار بأي حقوق نشر، أو علامة تجارية، أو إشعارات ملكية أخرى، أو مواد، أو إعلانات تعود إلينا أو إلى مرخصينا أو أطراف ثالثة أخرى موجودة داخل تطبيقاتنا [cite: terms_en.html].</li>
+        <li><span class="letter">و</span> دمج تطبيقاتنا في خدمة أو موقع ويب آخر أو إتاحتها عبر التأطير أو النسخ المتطابق [cite: terms_en.html].</li>
+        <li><span class="letter">ز</span> استخراج أي بيانات أو بيانات وصفية من تطبيقاتنا، أو إنشاء أي فهرس أو قاعدة بيانات تتضمن أي جزء منها [cite: terms_en.html].</li>
+        <li><span class="letter">ح</span> القيام بأي شيء قد يتسبب في أضرار لتطبيقاتنا [cite: terms_en.html].</li>
+        <li><span class="letter">ط</span> تنفيذ أي أنشطة ضارة أو غير قانونية باستخدام تطبيقاتنا [cite: terms_en.html].</li>
+        <li><span class="letter">ي</span> استخدام تطبيقاتنا بأي طريقة غير مصرح بها صراحة بموجب هذه الشروط [cite: terms_en.html].</li>
+      </ul>
+      <p>خلاف ذلك، ستقوم بتعويضنا عن أي خسائر (بما في ذلك أتعاب المحاماة) التي نتكبدها نتيجة للخرق المذكور أعلاه [cite: terms_en.html].</p>
+    </section>
+
+    <section id="ip">
+      <h2>4. الملكية الفكرية</h2>
+      <p>نحتفظ بحقوق الملكية الحصرية في تطبيقاتنا، ومحتوى التطبيق، والوثائق ذات الصلة في جميع أنحاء العالم والتي تنتمي إلينا وإلى مرخصينا [cite: terms_en.html].</p>
+      <p>تطبيقاتنا محمية بموجب حقوق النشر، والعلامات التجارية، والقوانين الأخرى. لا يجوز استخدام حقوق الملكية الفكرية الخاصة بنا فيما يتعلق بأي منتج أو خدمة دون موافقة كتابية مسبقة منا. لا يُسمح بأي عملية بيع، أو تعديل، أو توزيع، أو نسخ، أو استنساخ، أو نقل، أو عرض عام، أو إنشاء أعمال مشتقة، أو استخدام لأغراض تجارية لتطبيقاتنا أو محتوى مرخصينا [cite: terms_en.html].</p>
+    </section>
+
+    <section id="thirdparty">
+      <h2>5. روابط الأطراف الثالثة</h2>
+      <p>أنت تقر بأن تطبيقاتنا قد تحتوي على روابط لمواقع ويب خاصة بأطراف ثالثة (سواء عن طريق الإعلانات أو غير ذلك) والتي لا مملوكة ولا مسيطر عليها من قبلنا. يتم توفير هذه الروابط لتجربة المستخدم الخاصة بك فقط. نحن لا نتحكم في مثل هذه المواقع ولا نتحمل المسؤولية عن محتواها أو استخدامك لها [cite: terms_en.html].</p>
+      <p>من خلال الوصول إلى مثل هذا المحتوى، فإنك تقر بما يلي [cite: terms_en.html]:</p>
+      <ol class="list">
+        <li>أنت مسؤول عن مراجعة والامتثال لشروط الترخيص المعمول بها (مثل ترخيص MIT) التي تحكم الموارد المرتبطة [cite: terms_en.html].</li>
+        <li>نحن لسنا مسؤولين عن استخدامك لموارد الطرف الثالث أو عن أي مطالبات قد تنشأ نتيجة لعدم التزامك بمتطلبات الترخيص الخاص بهم [cite: terms_en.html].</li>
+      </ol>
+    </section>
+
+    <section id="purchase">
+      <h2>6. شراء إزالة الإعلانات مدى الحياة</h2>
+      <span class="feature-tag">الشراء داخل التطبيق</span>
+      <p>يتوفر عملية شراء لمرة واحدة داخل التطبيق والتي تعمل على إزالة جميع الإعلانات وفتح بعض الميزات المميزة التي تكون مقفلة لولا ذلك. يتم تفصيل التكلفة على صفحة الشراء داخل التطبيق. بمجرد الشراء، ستحصل على وصول مدى الحياة للتجربة الخالية من الإعلانات والميزات غير المفلترة المضمنة مع هذا الشراء [cite: terms_en.html].</p>
+      <div class="callout">
+        <strong>يرجى ملاحظة ما يلي:</strong>
+        <ul style="margin-top:8px;">
+          <li>عملية الشراء مدى الحياة غير متكررة ولا تتطلب تجديداً [cite: terms_en.html].</li>
+          <li>هذه العملية مرتبطة بحساب متجر Google Play الخاص بك ولا يمكن نقلها إلى حسابات أو أنظمة أخرى. وهي صالحة فقط على أجهزة Android المرتبطة بالحساب الذي قام بالشراء [cite: terms_en.html].</li>
+          <li>تخضع عمليات الاسترداد لعمليات الشراء مدى الحياة سياسات الاسترداد الخاصة بمتجر Google Play. يرجى مراجعة سياساتهم لمعرفة أهلية الاسترداد والتعليمات [cite: terms_en.html].</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="transfer">
+      <h2>7. التحويل</h2>
+      <p>يجوز لنا نقل حقوقنا والتزاماتنا بموجب هذه الشروط إلى منظمة أخرى. سنقوم دائماً بإخطارك والتأكد من أن النقل لن يؤثر على حقوقك بموجب هذه الشروط [cite: terms_en.html].</p>
+    </section>
+
+    <section id="termination">
+      <h2>8. الإنهاء</h2>
+      <p>تطبق هذه الشروط من وستظل سارية المفعول بالكامل طالما أنك تستخدم تطبيقاتنا، حتى يتم إنهاؤها وفقاً لهذا القسم 8 [cite: terms_en.html].</p>
+      <p>يجوز لنا إنهاء أو تعليق استخدامك لتطبيقاتنا فوراً، دون إشعار مسبق أو مسؤوليّة، لأي سبب كان، بما في ذلك على سبيل المثال لا الحصر إذا قمت بخرق هذه الاتفاقية. يمكنك إنهاء هذه الشروط عن طريق التوقف عن استخدام تطبيقاتنا وحذفها أو إلغاء تثبيتها من جهازك. ومع ذلك، حتى بعد إنهاء هذه الاتفاقية، ستظل الأقسام التالية سارية المفعول: 4، 5، 7، 8، و9 [cite: terms_en.html].</p>
+    </section>
+
+    <section id="liability">
+      <h2>9. المسؤولية</h2>
+      <p>نحن نحدّ من مسؤوليتنا الإجمالية عن الأضرار المباشرة الناشئة عن أو فيما يتعلق بهذه الشروط، تجاهك، فيما يتعلق بجميع الأحداث التي تحدث في أي سنة تقويمية — سواء في العقد، أو الضرر (بما في ذلك الإهمال)، أو خرق الواجب القانوني، أو غير ذلك — إلى 100% من الرسوم المدفوعة والمستحقة الدفع من قبلك لنا فيما يتعلق بالطبق في سنة تقويمية معينة [cite: terms_en.html].</p>
+      <div class="strong-notice">
+        تطبيقاتنا مخصصة للاستخدام المنزلي والخاص فقط. إذا استخدكت تطبيقاتنا لأي غرض تجاري، أو تجاري، أو إعادة بيع، فلن تتحمل أي مسؤولية تجاهك عن أي خسارة في الربح، أو خسارة في الأعمال التجارية، أو انقطاع الأعمال، أو خسارة في فرصة تجارية [cite: terms_en.html].
+      </div>
+    </section>
+
+    <section id="privacy">
+      <h2>10. سياسة الخصوصية</h2>
+      <p>تكتسب حماية معلوماتك الشخصية أهمية بالغة بالنسبة لنا. بالإضافة إلى هذه الشروط، قمنا أيضاً بنشر سياسة الخصوصية. على الرغم من أنها ليست جزءاً من هذه الشروط، إلا أننا نجعلك تقرأها لفهم كيفية تحديث، وإدارة، وتصدير، وحذف معلوماتك بشكل أفضل [cite: terms_en.html].</p>
+    </section>
+
+    <section id="voodoo">
+      <h2>11. وضع فودو الاختياري</h2>
+      <span class="feature-tag">ميزة اختيارية</span>
+      <p>يتضمن تطبيقنا وضع <strong>Voodoo Mode</strong> الاختياري — وهو سمة داكنة مميزة ومصممة من قِبل فنانين تحول واجهة التطبيق بعناصر مرئية وصوتية مستوحاة من الرعب الخفيف، لأغراض الترفيه والجمالية فقط. هذا الوضع اختياري بالكامل، ومُعطل افتراضياً، وغير مخصص للأطفال الصغار أو المستخدمين الذين قد يكونون حساسين للصور أو الأصوات المزعجة [cite: terms_en.html].</p>
+      <div class="callout warn">
+        <strong>يرجى ملاحظة ما يلي:</strong> باختيارك تمكين وضع Voodoo (فودو)، فإنك تقر بطبيعة محتواه وتتحمل المسؤولية عن استخدامه. يجب على أولياء الأمور والأوصياء تحديد ما إذا كان هذا الوضع مناسباً قبل السماح للقاصر بتمكينه [cite: terms_en.html].
+      </div>
+    </section>
+
+    <section id="disclaimers">
+      <h2>12. إخلاء المسؤولية والضمانات</h2>
+      <p>باستثناء ما هو منصوص عليه في هذه الاتفاقية، يتم توفير الخدمات والبرامج على أساس <strong>"كما هي (AS-IS)"</strong>. بينما نبذل قصارى جهدنا للحفاظ على خدمتنا آمنة ودقيقة، فإننا نخلي مسؤوليتنا عن جميع الضمانات، الصريحة أو الضمنية، بما في ذلك الضمانات الضمنية لعدم الانتهاك، والتجارة، والملائمة لغرض معين. نحن لا نتقدم بأي التزامات حول المحتوى داخل الخدمات [cite: terms_en.html].</p>
+      <p>نحن نخلي مسؤوليتنا إضافياً عن أي ضمان بأن [cite: terms_en.html]:</p>
+      <ol class="list">
+        <li>الخدمات أو البرامج ستلبي متطلباتك أو ستكون متاحة باستمرار، أو دون انقطاع، أو في الوقت المناسب، أو آمنة، أو خالية من الأخطاء [cite: terms_en.html];</li>
+        <li>النتائج التي تم الحصول عليها من استخدام الخدمات أو البرامج ستكون فعالة أو دقيقة أو موثوقة [cite: terms_en.html];</li>
+        <li>جودة الخدمات أو البرامج ستلبي توقعاتك [cite: terms_en.html];</li>
+        <li>سيتم تصحيح أي أخطاء أو عيوب في الخدمات أو البرامج [cite: terms_en.html]; أو</li>
+        <li>الخدمة، خوادمها، المحتوى، أو رسائل البريد الإلكتروني المرسلة منا أو نيابة عنا خالية من الفيروسات، أو النصوص البرمجية، أو أحصنة طروادة، أو الديدان، أو البرامج الضارة، أو قنابل الوقت، أو المكونات الضارة الأخرى [cite: terms_en.html].</li>
+      </ol>
+    </section>
+
+    <section id="general">
+      <h2>13. عام</h2>
+      <p>إذا اعتبرت أي بند من هذه الشروط باطلاً من قبل محكمة ذات اختصاص قضائي، فلن يؤثر بطلان هذا البند على صلاحية البنود المتبقية من هذه الشروط والأحكام، والتي ستظل سارية المفعول بالكامل [cite: terms_en.html].</p>
+      <p>تتم تسوية جميع أو أي نزاعات تنشأ عن، أو تتعلق بـ، أو فيما يتعلق بشروط هذه الاتفاقية — بما في ذلك تفسير وصلاحية شروطها والحقوق والالتزامات الخاصة بالأطراف — ودياً من خلال المناقشة المتبادلة، وفي حال تعذر ذلك، يتم تسويتها من خلال المحكمة ذات الاختصاص في موطن المدعى عليه للبحث عن حل [cite: terms_en.html].</p>
+      <p>إذا كان لديك أي أسئلة حول محتوى هذه الاتفاقية، أو تحتاج إلى تقديم تعليقات لنا أثناء الاستخدام، يمكنك الاتصال بنا على [cite: terms_en.html]:
+        <a class="inline" href="mailto:havisionary.support@gmail.com">havisionary.support@gmail.com</a>.
+      </p>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  © 2026 HA VISIONARY — Spectra Flashlight. جميع الحقوق محفوظة.
+</footer>
+
+</body>
+</html>
