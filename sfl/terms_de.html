@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nutzungsbedingungen | Spectra Flashlight</title>
+<style>
+  :root{
+    --bg:#0f1720;
+    --panel:#ffffff;
+    --accent:#2563eb;
+    --accent-light:#eef4ff;
+    --text:#1f2937;
+    --muted:#6b7280;
+    --border:#e5e7eb;
+    --warn:#b45309;
+    --warn-bg:#fffbeb;
+    --warn-border:#fde68a;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:linear-gradient(180deg,#0f1720 0%, #1e293b 260px, #f3f4f6 260px);
+    color:var(--text);
+    line-height:1.65;
+  }
+  header{
+    max-width:900px;
+    margin:0 auto;
+    padding:56px 24px 40px;
+    color:#fff;
+    text-align:center;
+  }
+  header .badge{
+    display:inline-block;
+    background:rgba(255,255,255,0.12);
+    padding:6px 16px;
+    border-radius:999px;
+    font-size:13px;
+    letter-spacing:.03em;
+    margin-bottom:16px;
+  }
+  header h1{
+    font-size:32px;
+    margin:0 0 10px;
+    font-weight:700;
+  }
+  header p{
+    color:#cbd5e1;
+    margin:0;
+    font-size:15px;
+  }
+  .container{
+    max-width:900px;
+    margin:-40px auto 60px;
+    background:var(--panel);
+    border-radius:16px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.12);
+    padding:0;
+    overflow:hidden;
+  }
+  .toc{
+    background:var(--accent-light);
+    padding:28px 32px;
+    border-bottom:1px solid var(--border);
+  }
+  .toc h2{
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    color:var(--accent);
+    margin:0 0 14px;
+  }
+  .toc ol{
+    margin:0;
+    padding-left:20px;
+    columns:2;
+    gap:24px;
+  }
+  .toc li{
+    margin-bottom:8px;
+    font-size:14.5px;
+  }
+  .toc a{
+    color:var(--text);
+    text-decoration:none;
+  }
+  .toc a:hover{
+    color:var(--accent);
+    text-decoration:underline;
+  }
+  main{
+    padding:36px 40px 50px;
+  }
+  section{
+    margin-bottom:36px;
+    scroll-margin-top:20px;
+  }
+  section h2{
+    font-size:20px;
+    color:#111827;
+    border-left:4px solid var(--accent);
+    padding-left:12px;
+    margin:0 0 14px;
+  }
+  p{
+    margin:0 0 12px;
+    color:#374151;
+    font-size:15px;
+  }
+  a.inline{
+    color:var(--accent);
+    text-decoration:none;
+    word-break:break-word;
+  }
+  a.inline:hover{ text-decoration:underline; }
+  ul, ol.list{
+    margin:0 0 12px;
+    padding-left:22px;
+  }
+  ul li, ol.list li{
+    margin-bottom:6px;
+    font-size:15px;
+    color:#374151;
+  }
+  .restriction-list{
+    list-style:none;
+    padding:0;
+    margin:0 0 12px;
+    display:grid;
+    gap:8px;
+  }
+  .restriction-list li{
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+    background:#f9fafb;
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:10px 14px;
+    font-size:14.5px;
+    color:#374151;
+  }
+  .restriction-list .letter{
+    flex-shrink:0;
+    width:22px;
+    height:22px;
+    border-radius:6px;
+    background:var(--accent);
+    color:#fff;
+    font-size:12px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .callout{
+    background:#f9fafb;
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:16px 20px;
+    margin:14px 0;
+    font-size:14.5px;
+    color:#4b5563;
+  }
+  .callout.warn{
+    background:var(--warn-bg);
+    border-color:var(--warn-border);
+    color:#92400e;
+  }
+  .callout.warn strong{ color:var(--warn); }
+  .strong-notice{
+    background:#111827;
+    color:#f9fafb;
+    border-radius:10px;
+    padding:18px 20px;
+    margin:14px 0;
+    font-size:14px;
+    letter-spacing:.01em;
+  }
+  .feature-tag{
+    display:inline-block;
+    background:var(--accent-light);
+    color:var(--accent);
+    font-size:12px;
+    font-weight:600;
+    padding:3px 10px;
+    border-radius:999px;
+    margin-bottom:10px;
+  }
+  footer{
+    text-align:center;
+    padding:30px 20px 50px;
+    color:var(--muted);
+    font-size:13px;
+  }
+  footer a{ color:var(--accent); text-decoration:none; }
+  @media (max-width:640px){
+    .toc ol{ columns:1; }
+    main{ padding:28px 22px 40px; }
+    header h1{ font-size:26px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="badge">Spectra Flashlight · Rechtliches</div>
+  <h1>Nutzungsbedingungen</h1>
+  <p>Zuletzt aktualisiert und gültig ab dem 1. Mai 2026</p>
+</header>
+
+<div class="container">
+
+  <div class="toc">
+    <h2>Inhaltsverzeichnis</h2>
+    <ol>
+      <li><a href="#intro">Einführung und Zustimmung</a></li>
+      <li><a href="#updates">Aktualisierungen</a></li>
+      <li><a href="#restrictions">Beschränkungen</a></li>
+      <li><a href="#ip">Geistiges Eigentum</a></li>
+      <li><a href="#thirdparty">Links zu Dritten</a></li>
+      <li><a href="#advertising">Werbung</a></li>
+      <li><a href="#purchase">Lebenslange werbefreie Nutzung</a></li>
+      <li><a href="#transfer">Übertragung</a></li>
+      <li><a href="#termination">Beendigung</a></li>
+      <li><a href="#liability">Haftung</a></li>
+      <li><a href="#privacy">Datenschutzrichtlinie</a></li>
+      <li><a href="#voodoo">Optionaler Voodoo-Modus</a></li>
+      <li><a href="#disclaimers">Haftungsausschlüsse und Gewährleistung</a></li>
+      <li><a href="#general">Allgemeines</a></li>
+    </ol>
+  </div>
+
+  <main>
+
+    <section id="intro">
+      <h2>1. Einführung und Zustimmung</h2>
+      <p>Diese Nutzungsbedingungen stellen eine Vereinbarung zwischen „HA VISIONARY“ und Ihnen dar, die Sie über Ihre Rechte und unsere Rechte hinsichtlich der Nutzung unserer Apps informiert.</p>
+      <p>Bitte lesen Sie diese Bedingungen sehr sorgfältig durch, da Sie durch die Nutzung unserer Dienste bestätigen, dass Sie diese gelesen, verstanden und sich mit deren Einhaltung einverstanden erklärt haben. Wenn Sie nicht mit allen diesen Bedingungen einverstanden sind, dürfen Sie unsere Apps nicht nutzen.</p>
+    </section>
+
+    <section id="updates">
+      <h2>2. Aktualisierungen</h2>
+      <p>Diese Bedingungen können von Zeit zu Zeit geändert werden. Wenn wir wesentliche Änderungen vornehmen, werden wir Sie benachrichtigen. Solche Änderungen werden mit der Aktualisierung unserer Bedingungen wirksam. Ihre fortgesetzte Nutzung gilt als Zustimmung zu den Änderungen. Wir sind nicht verpflichtet, Sie über Änderungen dieser Bedingungen zu informieren, die lediglich geringfügige Anpassungen oder Korrekturen darstellen. Bitte überprüfen Sie diese Bedingungen daher regelmäßig, um über etwaige Änderungen informiert zu bleiben.</p>
+      <p>Darüber hinaus aktualisieren wir unsere Apps möglicherweise automatisch und häufig, um die Leistung zu verbessern, die Funktionalität zu erweitern, Änderungen am Betriebssystem zu berücksichtigen oder Sicherheitsprobleme zu beheben. Wenn Sie sich dafür entscheiden, solche Updates nicht zu installieren, oder wenn Sie sich von automatischen Updates abmelden, können Sie unsere Apps möglicherweise nicht weiter nutzen.</p>
+    </section>
+
+    <section id="restrictions">
+      <h2>3. Beschränkungen</h2>
+      <p>Sofern Sie nicht unser vorheriges schriftliches Einverständnis eingeholt haben oder dies in diesen Bedingungen ausdrücklich gestattet ist, dürfen Sie nicht:</p>
+      <ul class="restriction-list">
+        <li><span class="letter">a</span> Unsere Apps kopieren, außer im Rahmen Ihrer normalen Nutzung unserer Anwendungen oder wenn dies zur Erstellung von Sicherungskopien oder zu betrieblichen Sicherheitszwecken erforderlich ist.</li>
+        <li><span class="letter">b</span> Unsere App modifizieren, übersetzen oder unsere App mit einem anderen Objektcode oder Programm kombinieren oder zusammenführen.</li>
+        <li><span class="letter">c</span> Unsere Apps zurückentwickeln (Reverse Engineering), disassemblieren, dekompilieren, den Objektcode in Quellcodeform reduzieren oder abgeleitete Werke erstellen (oder versuchen zu erstellen), die auf der Gesamtheit oder einem Teil unserer Apps basieren, es sei denn, dies ist nach geltendem Recht zulässig.</li>
+        <li><span class="letter">d</span> Unsere Apps oder Ihr Recht zur Nutzung unserer Apps vertreiben, unterlizenzieren, abtreten, teilen, im Zeitmietverfahren (Timesharing) nutzen, verkaufen, vermieten, verleasen, ein Sicherungsrecht daran gewähren, für Service-Büro-Zwecke nutzen oder anderweitig übertragen.</li>
+        <li><span class="letter">e</span> Urheberrechts-, Marken- oder andere Eigentumshinweise, Materialien oder Werbung, die uns, unseren Lizenzgebern oder anderen Dritten gehören und in unseren Apps enthalten sind, entfernen, modifizieren, blockieren, deaktivieren, unkenntlich machen oder beeinträchtigen.</li>
+        <li><span class="letter">f</span> Unsere Apps in einen anderen Dienst oder eine andere Website integrieren oder sie mittels Framing oder Spiegelung verfügbar machen.</li>
+        <li><span class="letter">g</span> Daten oder Metadaten aus unseren Apps extrahieren oder einen Index oder eine Datenbank erstellen, die einen Teil davon enthält.</li>
+        <li><span class="letter">h</span> Irgendetwas tun, das unseren Apps Schaden zufügen könnte.</li>
+        <li><span class="letter">i</span> Schädliche oder rechtswidrige Aktivitäten unter Nutzung unserer Apps durchführen.</li>
+        <li><span class="letter">j</span> Unsere Apps in irgendeiner Weise nutzen, die nicht ausdrücklich durch diese Bedingungen autorisiert ist.</li>
+      </ul>
+      <p>Andernfalls werden Sie uns für alle Verluste (einschließlich Anwaltskosten) entschädigen, die uns infolge des oben genannten Verstoßes entstehen.</p>
+    </section>
+
+    <section id="ip">
+      <h2>4. Geistiges Eigentum</h2>
+      <p>Wir behalten die ausschließlichen Eigentumsrechte an unseren Apps, App-Inhalten und der zugehörigen Dokumentation weltweit, die uns und unseren Lizenzgebern gehören.</p>
+      <p>Unsere Apps sind durch Urheberrechts-, Marken- und andere Gesetze geschützt. Unsere geistigen Eigentumsrechte dürfen nicht in Verbindung mit einem Produkt oder einer Dienstleistung ohne unser vorheriges schriftliches Einverständnis verwendet werden. Verkauf, Änderung, Verbreitung, Kopieren, Vervielfältigung, Übertragung, öffentliche Darstellung oder Erstellung abgeleiteter Werke oder die kommerzielle Nutzung unserer Apps oder der Inhalte unserer Lizenzgeber ist nicht gestattet.</p>
+    </section>
+
+    <section id="thirdparty">
+      <h2>5. Links zu Dritten</h2>
+      <p>Sie erkennen an, dass unsere Apps Links zu Websites Dritter enthalten können (sei es durch Werbung oder auf andere Weise), die nicht unser Eigentum sind und nicht von uns kontrolliert werden. Solche Links dienen lediglich Ihrer Benutzererfahrung. Wir kontrollieren solche Websites nicht und sind nicht für deren Inhalt oder Ihre Nutzung dieser verantwortlich.</p>
+      <p>Durch den Zugriff auf solche Inhalte erkennen Sie Folgendes an:</p>
+      <ol class="list">
+        <li>Sie sind dafür verantwortlich, die geltenden Lizenzbedingungen (z. B. MIT-Lizenz) zu überprüfen und einzuhalten, die für die verlinkten Ressourcen gelten.</li>
+        <li>Wir haften nicht für Ihre Nutzung von Ressourcen Dritter oder für Ansprüche, die sich aus Ihrer Nichteinhaltung deren Lizenzanforderungen ergeben könnten.</li>
+      </ol>
+    </section>
+
+    <section id="advertising">
+      <h2>6. Werbung</h2>
+      <p>Unsere Apps können Werbung anzeigen, die von externen Werbenetzwerken und Partnern bereitgestellt wird, einschließlich, aber nicht beschränkt auf Google AdMob. Diese Anzeigen werden von Dritten basierend auf deren eigenen Algorithmen und Inhaltsrichtlinien generiert und bereitgestellt. Wir haben <strong>keine redaktionelle Kontrolle</strong> darüber, welche spezifische Anzeige einem einzelnen Nutzer zu einem bestimmten Zeitpunkt bereitgestellt wird, und wir erstellen, schreiben, gestalten oder prüfen keine einzelnen Anzeigen, bevor sie angezeigt werden.</p>
+      <p>Dementsprechend gilt:</p>
+      <ul class="restriction-list">
+        <li><span class="letter">a</span> Wir sind nicht für die Richtigkeit, Rechtmäßigkeit oder Angemessenheit von beworbenen Inhalten, Produkten oder Dienstleistungen verantwortlich.</li>
+        <li><span class="letter">b</span> Wir sind nicht verantwortlich für Transaktionen, Kommunikation oder Interaktionen, die Sie mit einem Werbetreibenden oder einer Website haben, die über eine Anzeige erreicht wird.</li>
+        <li><span class="letter">c</span> Angesichts der Vielfalt unserer globalen Nutzerbasis können einige Anzeigen gelegentlich Inhalte, Produkte oder Botschaften widerspiegeln, die nicht mit den religiösen, kulturellen oder persönlichen Werten bestimmter Nutzer übereinstimmen, einschließlich, aber nicht beschränkt auf islamische Werte und Prinzipien. Wir befürworten, wählen oder beabsichtigen solche Inhalte nicht und lehnen jede Verantwortung – religiöser, moralischer oder sonstiger Art – ab, die sich aus Anzeigen ergibt, die von Werbenetzwerken Dritter geschaltet werden.</li>
+        <li><span class="letter">d</span> Wir ergreifen angemessene und technisch verfügbare Maßnahmen – einschließlich Inhaltskategorien-Blockierung und maximaler Anzeigeninhalt-Bewertungseinstellungen, die von unseren Werbepartnern angeboten werden –, um die Wahrscheinlichkeit der Anzeige unangemessener oder anstößiger Anzeigen zu verringern. Diese Maßnahmen sind jedoch Filter, die auf Plattformebene angewendet werden und können den vollständigen Ausschluss einer bestimmten Art von Inhalt nicht garantieren, da die endgültige Anzeigenauswahl unter der automatisierten Kontrolle des Drittanbieter-Netzwerks bleibt.</li>
+        <li><span class="letter">e</span> Indem Sie sich entscheiden, eine Version der App weiter zu nutzen, die Werbung Dritter anzeigt, erkennen Sie an und akzeptieren, dass solche Anzeigen außerhalb unserer redaktionellen Kontrolle liegen. Wenn Sie es vorziehen, überhaupt keiner Werbung Dritter ausgesetzt zu sein, bleibt Ihnen der in Abschnitt 7 beschriebene <strong>Kauf zur lebenslangen Werbeentfernung</strong> jederzeit zur Verfügung.</li>
+        <li><span class="letter">f</span> Wenn Sie auf eine Anzeige stoßen, die Sie für unangemessen oder anstößig halten, kontaktieren Sie uns bitte, damit wir dies unseren Werbepartnern melden können.</li>
+      </ul>
+      <div class="callout">
+        Nutzer, die eine werbefreie Erfahrung bevorzugen, können den in Abschnitt 7 beschriebenen <strong>Kauf zur lebenslangen Werbeentfernung</strong> nutzen.
+      </div>
+    </section>
+
+    <section id="purchase">
+      <h2>7. Kauf zur lebenslangen Werbeentfernung</h2>
+      <span class="feature-tag">In-App-Kauf</span>
+      <p>Innerhalb der App ist ein einmaliger Kauf verfügbar, der alle Werbeanzeigen entfernt und bestimmte Premium-Funktionen freischaltet, die ansonsten gesperrt sind. Die Kosten sind auf der In-App-Kaufseite aufgeführt. Sobald der Kauf getätigt wurde, erhalten Sie lebenslangen Zugang zur werbefreien Erfahrung und den mit diesem Kauf enthaltenen freigeschalteten Funktionen.</p>
+      <div class="callout">
+        <strong>Bitte beachten Sie:</strong>
+        <ul style="margin-top:8px;">
+          <li>Der lebenslange Kauf ist nicht wiederkehrend und erfordert keine Verlängerung.</li>
+          <li>Dieser Kauf ist an Ihr Google Play Store-Konto gebunden und kann nicht auf andere Konten oder Systeme übertragen werden. Er ist nur auf Android-Geräten gültig, die mit dem kaufenden Konto verknüpft sind.</li>
+          <li>Rückerstattungen für lebenslange Käufe unterliegen den Rückerstattungsrichtlinien des Google Play Stores. Bitte überprüfen Sie deren Richtlinien hinsichtlich der Berechtigung und Anweisungen.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="transfer">
+      <h2>8. Übertragung</h2>
+      <p>Wir können unsere Rechte und Pflichten aus diesen Bedingungen an ein anderes Unternehmen übertragen. Wir werden Sie stets informieren und sicherstellen, dass die Übertragung Ihre Rechte gemäß diesen Bedingungen nicht beeinträchtigt.</p>
+    </section>
+
+    <section id="termination">
+      <h2>9. Beendigung</h2>
+      <p>Diese Bedingungen gelten ab dem Zeitpunkt der Nutzung unserer Apps und bleiben in vollem Umfang in Kraft, bis sie gemäß diesem Abschnitt 8 beendet werden.</p>
+      <p>Wir können Ihre Nutzung unserer Apps jederzeit ohne vorherige Ankündigung oder Haftung beenden oder aussetzen, aus welchem Grund auch immer, einschließlich, aber nicht beschränkt auf einen Verstoß gegen diese Vereinbarung. Sie können diese Bedingungen beenden, indem Sie die Nutzung unserer Apps einstellen und sie von Ihrem Gerät löschen oder deinstallieren. Die folgenden Abschnitte gelten jedoch auch nach Beendigung dieser Vereinbarung weiterhin: 4, 5, 6, 8, 9 und 10.</p>
+    </section>
+
+    <section id="liability">
+      <h2>10. Haftung</h2>
+      <p>Wir beschränken unsere Gesamthaftung für direkte Schäden, die sich aus oder im Zusammenhang mit diesen Bedingungen ergeben, Ihnen gegenüber in Bezug auf alle Ereignisse, die in einem Kalenderjahr eintreten – sei es aus Vertrag, unerlaubter Handlung (einschließlich Fahrlässigkeit), wegen Verletzung gesetzlicher Pflichten oder anderweitig – auf 100 % der Gebühren, die von Ihnen in Bezug auf die App in diesem Kalenderjahr an uns gezahlt wurden und zu zahlen sind.</p>
+      <div class="strong-notice">
+        UNSERE APPS SIND AUSSCHLIESSLICH FÜR DEN HÄUSLICHEN UND PRIVATEN GEBRAUCH BESTIMMT. WENN SIE UNSERE APPS FÜR KOMMERZIELLE, GESCHÄFTLICHE ODER WIEDERVERKAUFSZWECKE NUTZEN, HAFTEN WIR IHNEN GEGENÜBER NICHT FÜR ENTGANGENEN GEWINN, GESCHÄFTSUNTERBRECHUNG ODER VERLUST VON GESCHÄFTSMÖGLICHKEITEN.
+      </div>
+    </section>
+
+    <section id="privacy">
+      <h2>11. Datenschutzrichtlinie</h2>
+      <p>Der Schutz Ihrer personenbezogenen Daten nimmt für uns einen massiven Stellenwert ein. Zusätzlich zu diesen Bedingungen haben wir eine Datenschutzrichtlinie veröffentlicht. Obwohl diese kein Bestandteil dieser Bedingungen ist, empfehlen wir Ihnen, sie zu lesen, um besser zu verstehen, wie Sie Ihre Daten aktualisieren, verwalten, exportieren und löschen können.</p>
+    </section>
+
+    <section id="voodoo">
+      <h2>12. Optionaler Voodoo-Modus</h2>
+      <span class="feature-tag">Optionale Funktion</span>
+      <p>Unsere App enthält einen optionalen <strong>Voodoo-Modus</strong> – ein unverwechselbares, künstlerisch gestaltetes dunkles Design, das die Benutzeroberfläche der App mit leicht horrorinspirierten visuellen und akustischen Elementen verwandelt, ausschließlich für Unterhaltungs- und ästhetische Zwecke. Dieser Modus ist völlig optional, standardmäßig deaktiviert und nicht für kleine Kinder oder Nutzer gedacht, die empfindlich auf beunruhigende Bilder oder Geräusche reagieren könnten.</p>
+      <div class="callout warn">
+        <strong>Bitte beachten Sie:</strong> Wenn Sie sich entscheiden, den Voodoo-Modus zu aktivieren, erkennen Sie die Art seines Inhalts an und übernehmen die Verantwortung für seine Nutzung. Eltern und Erziehungsberechtigte sollten entscheiden, ob dieser Modus angemessen ist, bevor sie einem Minderjährigen die Aktivierung gestatten.
+      </div>
+    </section>
+
+    <section id="disclaimers">
+      <h2>13. Haftungsausschlüsse und Gewährleistung</h2>
+      <p>Sofern in dieser Vereinbarung nicht anders angegeben, werden die Dienste und Software <strong>"WIE BESEHEN"</strong> bereitgestellt. Während wir uns bemühen, unseren Dienst sicher und korrekt zu halten, lehnen wir alle ausdrücklichen oder stillschweigenden Gewährleistungen ab, einschließlich der stillschweigenden Gewährleistungen der Nichtverletzung, der Marktgängigkeit und der Eignung für einen bestimmten Zweck. Wir geben keine Zusagen über die Inhalte innerhalb der Dienste ab.</p>
+      <p>Des Weiteren lehnen wir jede Gewährleistung dafür ab, dass:</p>
+      <ol class="list">
+        <li>Die Dienste oder Software Ihren Anforderungen entsprechen oder ständig verfügbar, ununterbrochen, zeitgerecht, sicher oder fehlerfrei sind;</li>
+        <li>Die Ergebnisse, die aus der Nutzung der Dienste oder Software erzielt werden, effektiv, genau oder zuverlässig sind;</li>
+        <li>Die Qualität der Dienste oder Software Ihren Erwartungen entspricht;</li>
+        <li>Etwaige Fehler oder Mängel in den Diensten oder Software korrigiert werden; oder</li>
+        <li>Der Dienst, seine Server, die Inhalte oder E-Mails, die von oder in unserem Namen gesendet werden, frei von Viren, Skripten, trojanischen Pferden, Würmern, Malware, Zeitbomben oder anderen schädlichen Komponenten sind.</li>
+      </ol>
+    </section>
+
+    <section id="general">
+      <h2>14. Allgemeines</h2>
+      <p>Sollte eine Bestimmung dieser Bedingungen von einem zuständigen Gericht für ungültig erklärt werden, so berührt die Ungültigkeit dieser Bestimmung nicht die Gültigkeit der übrigen Bestimmungen dieser Nutzungsbedingungen, welche in vollem Umfang in Kraft bleiben.</p>
+      <p>Alle Streitigkeiten, die sich aus, in Bezug auf oder im Zusammenhang mit den Bedingungen dieser Vereinbarung ergeben – einschließlich der Auslegung und Gültigkeit der Bedingungen sowie der jeweiligen Rechte und Pflichten der Parteien – sollen gütlich durch gegenseitige Diskussion beigelegt werden; andernfalls sind sie durch das Gericht beizulegen, das am Wohnsitz des Beklagten zuständig ist, um eine Lösung zu finden.</p>
+      <p>Wenn Sie Fragen zum Inhalt dieser Vereinbarung haben oder uns während der Nutzung Feedback geben müssen, können Sie uns unter:
+        <a class="inline" href="mailto:havisionary.support@gmail.com">havisionary.support@gmail.com</a> kontaktieren.
+      </p>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  © 2026 HA VISIONARY — Spectra Flashlight. Alle Rechte vorbehalten.
+</footer>
+
+</body>
+</html>
