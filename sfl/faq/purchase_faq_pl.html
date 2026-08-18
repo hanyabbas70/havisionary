@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Najczęściej zadawane pytania (FAQ) | Spectra Flashlight</title>
+<style>
+  :root{
+    --bg:#0f1720;
+    --panel:#ffffff;
+    --accent:#2563eb;
+    --accent-light:#eef4ff;
+    --text:#1f2937;
+    --muted:#6b7280;
+    --border:#e5e7eb;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:linear-gradient(180deg,#0f1720 0%, #1e293b 260px, #f3f4f6 260px);
+    color:var(--text);
+    line-height:1.65;
+  }
+  header{
+    max-width:800px;
+    margin:0 auto;
+    padding:56px 24px 40px;
+    color:#fff;
+    text-align:center;
+  }
+  header .badge{
+    display:inline-block;
+    background:rgba(255,255,255,0.12);
+    padding:6px 16px;
+    border-radius:999px;
+    font-size:13px;
+    letter-spacing:.03em;
+    margin-bottom:16px;
+  }
+  header h1{
+    font-size:32px;
+    margin:0 0 10px;
+    font-weight:700;
+  }
+  header p{
+    color:#cbd5e1;
+    margin:0;
+    font-size:15px;
+  }
+  .container{
+    max-width:800px;
+    margin:-40px auto 60px;
+    background:var(--panel);
+    border-radius:16px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.12);
+    padding:36px 32px 44px;
+  }
+  .search-hint{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:var(--accent-light);
+    border:1px solid #dbe7fe;
+    border-radius:10px;
+    padding:14px 18px;
+    margin-bottom:28px;
+    font-size:14px;
+    color:#1e40af;
+  }
+  .search-hint svg{ flex-shrink:0; }
+  .faq-list{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .faq-item{
+    border:1px solid var(--border);
+    border-radius:12px;
+    overflow:hidden;
+    background:#fff;
+    transition:border-color .15s ease;
+  }
+  .faq-item.open{
+    border-color:var(--accent);
+  }
+  .faq-question{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    width:100%;
+    text-align:left;
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:18px 20px;
+    font-size:15.5px;
+    font-weight:600;
+    color:#111827;
+    font-family:inherit;
+  }
+  .faq-question:hover{
+    background:#fafbfc;
+  }
+  .q-icon{
+    flex-shrink:0;
+    width:30px;
+    height:30px;
+    border-radius:8px;
+    background:var(--accent-light);
+    color:var(--accent);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:15px;
+    font-weight:700;
+  }
+  .q-text{ flex:1; }
+  .chevron{
+    flex-shrink:0;
+    width:18px;
+    height:18px;
+    color:var(--muted);
+    transition:transform .2s ease;
+  }
+  .faq-item.open .chevron{
+    transform:rotate(180deg);
+    color:var(--accent);
+  }
+  .faq-answer-wrap{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .25s ease;
+  }
+  .faq-item.open .faq-answer-wrap{
+    max-height:300px;
+  }
+  .faq-answer{
+    padding:0 20px 20px 64px;
+    font-size:14.5px;
+    color:#4b5563;
+  }
+  footer{
+    text-align:center;
+    padding:30px 20px 50px;
+    color:var(--muted);
+    font-size:13px;
+  }
+  footer a{ color:var(--accent); text-decoration:none; }
+  @media (max-width:640px){
+    .container{ padding:28px 20px 36px; }
+    header h1{ font-size:26px; }
+    .faq-answer{ padding-left:20px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="badge">Spectra Flashlight · Wsparcie</div>
+  <h1>Najczęściej zadawane pytania (FAQ)</h1>
+  <p>Wszystko, co musisz wiedzieć o zakupie wersji Pro</p>
+</header>
+
+<div class="container">
+
+  <div class="search-hint">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+    Dotknij dowolnego pytania poniżej, aby rozwinąć odpowiedź. Masz jeszcze pytania? Napisz do nas na <a href="mailto:havisionary.support@gmail.com" style="color:#1e40af;font-weight:600;">havisionary.support@gmail.com</a>.
+  </div>
+
+  <div class="faq-list" id="faqList">
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">1</span>
+        <span class="q-text">Jaka jest różnica między wersją darmową a Pro?</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">Wersja Pro odblokowuje wszystkie funkcje na stałe i usuwa reklamy. Wersja darmowa zawiera pewne ograniczenia i reklamy.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">2</span>
+        <span class="q-text">Zapłaciłem, ale wersja Pro nie została aktywowana.</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">Odczekaj minutę lub dwie, a następnie uruchom ponownie aplikację. Jeśli problem nie ustąpi, dotknij przycisku <strong>Przywróć zakupy</strong>.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">3</span>
+        <span class="q-text">Kupiłem wersję Pro, a potem odinstalowałem aplikację. Czy muszę płacić ponownie?</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">Nie. Zainstaluj ponownie aplikację przy użyciu tego samego konta Google, którego użyłeś do zakupu, a następnie w razie potrzeby dotknij <strong>Przywróć zakupy</strong>.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">4</span>
+        <span class="q-text">Zmieniłem telefon. Czy stracę wersję Pro?</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">Nie. Tak długo, jak używasz tego samego konta Google, z którego dokonano zakupu, możesz przywrócić wersję Pro bez żadnych dodatkowych kosztów.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">5</span>
+        <span class="q-text">Przycisk zakupu nie działa.</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">Upewnij się, że masz połączenie z internetem i że sklep Google Play jest zaktualizowany, a następnie spróbuj ponownie.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">6</span>
+        <span class="q-text">Dlaczego widzę komunikat "Element niedostępny"?</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">Produkt może nie być dostępny w Twoim kraju lub aplikacja może nie została zainstalowana ze sklepu Google Play.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">7</span>
+        <span class="q-text">Zostałem obciążony dwukrotnie przez pomyłkę.</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">Zakupu dożywotniego nie można dokonać dwukrotnie przy użyciu tego samego konta Google. Jeśli uważasz, że wystąpił problem z płatnością, sprawdź historię zakupów w Google Play.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">8</span>
+        <span class="q-text">Czy mogę używać wersji Pro na więcej niż jednym urządzeniu?</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">Tak. Możesz używać wersji Pro na dowolnym urządzeniu zalogowanym przy użyciu tego samego konta Google, którego użyto do zakupu.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">9</span>
+        <span class="q-text">Czy potrzebuję połączenia z internetem, aby używać wersji Pro?</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">Nie. Po aktywowaniu wersji Pro działa ona w trybie offline. Jednak połączenie z internetem może być wymagane do przywrócenia zakupu.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">10</span>
+        <span class="q-text">Czy mogę przenieść wersję Pro na inne konto Google?</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">Nie. Zakupy są na stałe powiązane z kontem Google, które zostało użyte do ich zakupu.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">11</span>
+        <span class="q-text">Jak mogę poprosić o zwrot pieniędzy?</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">Otwórz sklep Google Play, znajdź swój zakup w historii zamówień, a następnie poproś o zwrot pieniędzy, jeśli ta opcja jest dostępna. Zwroty podlegają polityce zwrotów Google.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  © 2026 HA VISIONARY — Spectra Flashlight. Wszelkie prawa zastrzeżone.
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.closest('.faq-item');
+      item.classList.toggle('open');
+    });
+  });
+</script>
+
+</body>
+</html>
