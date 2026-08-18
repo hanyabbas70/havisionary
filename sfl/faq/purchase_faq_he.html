@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>שאלות נפוצות בנושא רכישה | Spectra Flashlight</title>
+<style>
+  :root{
+    --bg:#0f1720;
+    --panel:#ffffff;
+    --accent:#2563eb;
+    --accent-light:#eef4ff;
+    --text:#1f2937;
+    --muted:#6b7280;
+    --border:#e5e7eb;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(180deg,#0f1720 0%, #1e293b 260px, #f3f4f6 260px);
+    color:var(--text);
+    line-height:1.65;
+    direction:rtl;
+    text-align:right;
+  }
+  header{
+    max-width:800px;
+    margin:0 auto;
+    padding:56px 24px 40px;
+    color:#fff;
+    text-align:center;
+  }
+  header .badge{
+    display:inline-block;
+    background:rgba(255,255,255,0.12);
+    padding:6px 16px;
+    border-radius:999px;
+    font-size:13px;
+    letter-spacing:.03em;
+    margin-bottom:16px;
+  }
+  header h1{
+    font-size:32px;
+    margin:0 0 10px;
+    font-weight:700;
+  }
+  header p{
+    color:#cbd5e1;
+    margin:0;
+    font-size:15px;
+  }
+  .container{
+    max-width:800px;
+    margin:-40px auto 60px;
+    background:var(--panel);
+    border-radius:16px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.12);
+    padding:36px 32px 44px;
+  }
+  .search-hint{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:var(--accent-light);
+    border:1px solid #dbe7fe;
+    border-radius:10px;
+    padding:14px 18px;
+    margin-bottom:28px;
+    font-size:14px;
+    color:#1e40af;
+  }
+  .search-hint svg{ flex-shrink:0; }
+  .faq-list{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .faq-item{
+    border:1px solid var(--border);
+    border-radius:12px;
+    overflow:hidden;
+    background:#fff;
+    transition:border-color .15s ease;
+  }
+  .faq-item.open{
+    border-color:var(--accent);
+  }
+  .faq-question{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    width:100%;
+    text-align:right;
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:18px 20px;
+    font-size:15.5px;
+    font-weight:600;
+    color:#111827;
+    font-family:inherit;
+  }
+  .faq-question:hover{
+    background:#fafbfc;
+  }
+  .q-icon{
+    flex-shrink:0;
+    width:30px;
+    height:30px;
+    border-radius:8px;
+    background:var(--accent-light);
+    color:var(--accent);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:15px;
+    font-weight:700;
+  }
+  .q-text{ flex:1; }
+  .chevron{
+    flex-shrink:0;
+    width:18px;
+    height:18px;
+    color:var(--muted);
+    transition:transform .2s ease;
+  }
+  .faq-item.open .chevron{
+    transform:rotate(180deg);
+    color:var(--accent);
+  }
+  .faq-answer-wrap{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .25s ease;
+  }
+  .faq-item.open .faq-answer-wrap{
+    max-height:300px;
+  }
+  .faq-answer{
+    padding:0 64px 20px 20px;
+    font-size:14.5px;
+    color:#4b5563;
+  }
+  footer{
+    text-align:center;
+    padding:30px 20px 50px;
+    color:var(--muted);
+    font-size:13px;
+  }
+  footer a{ color:var(--accent); text-decoration:none; }
+  @media (max-width:640px){
+    .container{ padding:28px 20px 36px; }
+    header h1{ font-size:26px; }
+    .faq-answer{ padding-right:20px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="badge">Spectra Flashlight · תמיכה</div>
+  <h1>שאלות נפוצות בנושא רכישה</h1>
+  <p>כל מה שצריך לדעת על רכישת גרסת ה-Pro</p>
+</header>
+
+<div class="container">
+
+  <div class="search-hint">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+    לחץ על כל שאלה למטה כדי להרחיב את התשובה. עדיין צריך עזרה? פנה אלינו בכתובת <a href="mailto:havisionary.support@gmail.com" style="color:#1e40af;font-weight:600;">havisionary.support@gmail.com</a>.
+  </div>
+
+  <div class="faq-list" id="faqList">
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">1</span>
+        <span class="q-text">מה ההבדל בין הגרסה החינמית לגרסת ה-Pro?</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">גרסת ה-Pro פותחת את כל התכונות לצמיתות ומסירה פרסומות. הגרסה החינמית כוללת מגבלות מסוימות ופרסומות.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">2</span>
+        <span class="q-text">שילמתי, אבל גרסת ה-Pro לא הופעלה.</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">אנא המתן דקה או שתיים, ואז הפעל מחדש את האפליקציה. אם הבעיה נמשכת, לחץ על <strong>שחזור רכישות</strong>.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">3</span>
+        <span class="q-text">רכשתי את גרסת ה-Pro, ואז הסרתי את האפליקציה. האם עלי לשלם שוב?</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">לא. התקן מחדש את האפליקציה באמצעות אותו חשבון גוגל ששימש לרכישה, ולאחר מכן לחץ על <strong>שחזור רכישות</strong> במידת הצורך.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">4</span>
+        <span class="q-text">החלפתי טלפון. האם אאבד את ה-Pro?</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">לא. כל עוד אתה משתמש באותו חשבון גוגל שביצע את הרכישה, תוכל לשחזר את גרסת ה-Pro ללא עלות נוספת.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">5</span>
+        <span class="q-text">כפתור הרכישה לא עובד.</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">וודא שאתה מחובר לאינטרנט ושה-Google Play Store מעודכן, ואז נסה שוב.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">6</span>
+        <span class="q-text">למה אני רואה את ההודעה "הפריט אינו זמין"?</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">ייתכן שהמוצר אינו זמין במדינה שלך, או שהאפליקציה לא הותקנה מ-Google Play.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">7</span>
+        <span class="q-text">חויבתי פעמיים בטעות.</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">לא ניתן לרכוש רכישת "לכל החיים" פעמיים עם אותו חשבון גוגל. אם אתה סבור שהייתה בעיית תשלום, אנא בדוק את היסטוריית הרכישות שלך ב-Google Play.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">8</span>
+        <span class="q-text">האם אני יכול להשתמש ב-Pro ביותר ממכשיר אחד?</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">כן. אתה יכול להשתמש בגרסת ה-Pro בכל מכשיר המחובר עם אותו חשבון גוגל ששימש לרכישה.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">9</span>
+        <span class="q-text">האם אני צריך חיבור לאינטרנט כדי להשתמש ב-Pro?</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">לא. ברגע שגרסת ה-Pro מופעלת, היא עובדת ללא אינטרנט. עם זאת, ייתכן שיידרש חיבור לאינטרנט כדי לשחזר את הרכישה.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">10</span>
+        <span class="q-text">האם אני יכול להעביר את ה-Pro לחשבון גוגל אחר?</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">לא. הרכישות מקושרות לצמיתות לחשבון הגוגל ששימש לרכישתן.</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="q-icon">11</span>
+        <span class="q-text">איך אני יכול לבקש החזר כספי?</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer-wrap">
+        <div class="faq-answer">פתח את חנות ה-Google Play, מצא את הרכישה בהיסטוריית ההזמנות שלך, ולאחר מכן בקש החזר אם האפשרות זמינה. החזרים כפופים למדיניות ההחזרים של גוגל.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  © 2026 HA VISIONARY — Spectra Flashlight. כל הזכויות שמורות.
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.closest('.faq-item');
+      item.classList.toggle('open');
+    });
+  });
+</script>
+
+</body>
+</html>
