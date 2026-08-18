@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Điều khoản Sử dụng | Spectra Flashlight</title>
+<style>
+  :root{
+    --bg:#0f1720;
+    --panel:#ffffff;
+    --accent:#2563eb;
+    --accent-light:#eef4ff;
+    --text:#1f2937;
+    --muted:#6b7280;
+    --border:#e5e7eb;
+    --warn:#b45309;
+    --warn-bg:#fffbeb;
+    --warn-border:#fde68a;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:linear-gradient(180deg,#0f1720 0%, #1e293b 260px, #f3f4f6 260px);
+    color:var(--text);
+    line-height:1.65;
+  }
+  header{
+    max-width:900px;
+    margin:0 auto;
+    padding:56px 24px 40px;
+    color:#fff;
+    text-align:center;
+  }
+  header .badge{
+    display:inline-block;
+    background:rgba(255,255,255,0.12);
+    padding:6px 16px;
+    border-radius:999px;
+    font-size:13px;
+    letter-spacing:.03em;
+    margin-bottom:16px;
+  }
+  header h1{
+    font-size:32px;
+    margin:0 0 10px;
+    font-weight:700;
+  }
+  header p{
+    color:#cbd5e1;
+    margin:0;
+    font-size:15px;
+  }
+  .container{
+    max-width:900px;
+    margin:-40px auto 60px;
+    background:var(--panel);
+    border-radius:16px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.12);
+    padding:0;
+    overflow:hidden;
+  }
+  .toc{
+    background:var(--accent-light);
+    padding:28px 32px;
+    border-bottom:1px solid var(--border);
+  }
+  .toc h2{
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    color:var(--accent);
+    margin:0 0 14px;
+  }
+  .toc ol{
+    margin:0;
+    padding-left:20px;
+    columns:2;
+    gap:24px;
+  }
+  .toc li{
+    margin-bottom:8px;
+    font-size:14.5px;
+  }
+  .toc a{
+    color:var(--text);
+    text-decoration:none;
+  }
+  .toc a:hover{
+    color:var(--accent);
+    text-decoration:underline;
+  }
+  main{
+    padding:36px 40px 50px;
+  }
+  section{
+    margin-bottom:36px;
+    scroll-margin-top:20px;
+  }
+  section h2{
+    font-size:20px;
+    color:#111827;
+    border-left:4px solid var(--accent);
+    padding-left:12px;
+    margin:0 0 14px;
+  }
+  p{
+    margin:0 0 12px;
+    color:#374151;
+    font-size:15px;
+  }
+  a.inline{
+    color:var(--accent);
+    text-decoration:none;
+    word-break:break-word;
+  }
+  a.inline:hover{ text-decoration:underline; }
+  ul, ol.list{
+    margin:0 0 12px;
+    padding-left:22px;
+  }
+  ul li, ol.list li{
+    margin-bottom:6px;
+    font-size:15px;
+    color:#374151;
+  }
+  .restriction-list{
+    list-style:none;
+    padding:0;
+    margin:0 0 12px;
+    display:grid;
+    gap:8px;
+  }
+  .restriction-list li{
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+    background:#f9fafb;
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:10px 14px;
+    font-size:14.5px;
+    color:#374151;
+  }
+  .restriction-list .letter{
+    flex-shrink:0;
+    width:22px;
+    height:22px;
+    border-radius:6px;
+    background:var(--accent);
+    color:#fff;
+    font-size:12px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .callout{
+    background:#f9fafb;
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:16px 20px;
+    margin:14px 0;
+    font-size:14.5px;
+    color:#4b5563;
+  }
+  .callout.warn{
+    background:var(--warn-bg);
+    border-color:var(--warn-border);
+    color:#92400e;
+  }
+  .callout.warn strong{ color:var(--warn); }
+  .strong-notice{
+    background:#111827;
+    color:#f9fafb;
+    border-radius:10px;
+    padding:18px 20px;
+    margin:14px 0;
+    font-size:14px;
+    letter-spacing:.01em;
+  }
+  .feature-tag{
+    display:inline-block;
+    background:var(--accent-light);
+    color:var(--accent);
+    font-size:12px;
+    font-weight:600;
+    padding:3px 10px;
+    border-radius:999px;
+    margin-bottom:10px;
+  }
+  footer{
+    text-align:center;
+    padding:30px 20px 50px;
+    color:var(--muted);
+    font-size:13px;
+  }
+  footer a{ color:var(--accent); text-decoration:none; }
+  @media (max-width:640px){
+    .toc ol{ columns:1; }
+    main{ padding:28px 22px 40px; }
+    header h1{ font-size:26px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="badge">Spectra Flashlight · Pháp lý</div>
+  <h1>Điều khoản Sử dụng</h1>
+  <p>Cập nhật lần cuối và có hiệu lực từ ngày 1 tháng 5 năm 2026</p>
+</header>
+
+<div class="container">
+
+  <div class="toc">
+    <h2>Mục lục</h2>
+    <ol>
+      <li><a href="#intro">Giới thiệu và Chấp thuận</a></li>
+      <li><a href="#updates">Cập nhật</a></li>
+      <li><a href="#restrictions">Các hạn chế</a></li>
+      <li><a href="#ip">Quyền sở hữu trí tuệ</a></li>
+      <li><a href="#thirdparty">Liên kết đến bên thứ ba</a></li>
+      <li><a href="#advertising">Quảng cáo</a></li>
+      <li><a href="#purchase">Mua gói Gỡ bỏ Quảng cáo Trọn đời</a></li>
+      <li><a href="#transfer">Chuyển nhượng</a></li>
+      <li><a href="#termination">Chấm dứt</a></li>
+      <li><a href="#liability">Trách nhiệm pháp lý</a></li>
+      <li><a href="#privacy">Chính sách Bảo mật</a></li>
+      <li><a href="#voodoo">Chế độ Voodoo Tùy chọn</a></li>
+      <li><a href="#disclaimers">Tuyên bố từ chối trách nhiệm và Bảo hành</a></li>
+      <li><a href="#general">Quy định chung</a></li>
+    </ol>
+  </div>
+
+  <main>
+
+    <section id="intro">
+      <h2>1. Giới thiệu và Chấp thuận</h2>
+      <p>Các Điều khoản Sử dụng này cấu thành một thỏa thuận giữa "HA VISIONARY" và bạn, thông báo cho bạn về quyền của bạn và quyền của chúng tôi liên quan đến việc bạn sử dụng các ứng dụng của chúng tôi.</p>
+      <p>Vui lòng đọc kỹ các điều khoản này, vì bằng cách sử dụng các dịch vụ của chúng tôi, bạn xác nhận rằng bạn đã đọc, hiểu và đồng ý bị ràng buộc bởi các điều khoản này. Nếu bạn không đồng ý với tất cả các điều khoản này, bạn không được phép sử dụng các ứng dụng của chúng tôi.</p>
+    </section>
+
+    <section id="updates">
+      <h2>2. Cập nhật</h2>
+      <p>Các điều khoản này có thể được sửa đổi theo thời gian. Nếu chúng tôi thực hiện bất kỳ thay đổi quan trọng nào, chúng tôi sẽ thông báo cho bạn và các sửa đổi đó sẽ có hiệu lực ngay tại thời điểm cập nhật điều khoản của chúng tôi. Việc bạn tiếp tục sử dụng ứng dụng sẽ được coi là đồng ý với các sửa đổi đó. Chúng tôi không có nghĩa vụ thông báo cho bạn về bất kỳ thay đổi nào đối với các điều khoản này dẫn đến các điều chỉnh hoặc sửa lỗi nhỏ. Do đó, vui lòng xem lại các điều khoản này thường xuyên để đảm bảo bạn được thông báo về bất kỳ thay đổi nào.</p>
+      <p>Ngoài ra, chúng tôi có thể tự động cập nhật các ứng dụng của mình thường xuyên để cải thiện hiệu suất, nâng cao chức năng, phản ánh các thay đổi đối với hệ điều hành hoặc giải quyết các vấn đề bảo mật. Nếu bạn chọn không cài đặt các bản cập nhật đó, hoặc nếu bạn từ chối cập nhật tự động, bạn có thể không tiếp tục sử dụng được các ứng dụng của chúng tôi.</p>
+    </section>
+
+    <section id="restrictions">
+      <h2>3. Các hạn chế</h2>
+      <p>Trừ khi bạn đã yêu cầu và nhận được sự đồng ý trước bằng văn bản của chúng tôi, hoặc trừ khi được cho phép rõ ràng trong các Điều khoản này, bạn không được phép:</p>
+      <ul class="restriction-list">
+        <li><span class="letter">a</span> Sao chép các ứng dụng của chúng tôi trừ khi là một phần của việc sử dụng ứng dụng bình thường hoặc khi cần thiết để tạo bản sao lưu hoặc vì mục đích bảo mật vận hành.</li>
+        <li><span class="letter">b</span> Sửa đổi hoặc dịch toàn bộ hoặc một phần ứng dụng của chúng tôi, hoặc kết hợp hoặc hợp nhất ứng dụng của chúng tôi với bất kỳ mã đối tượng hoặc chương trình nào khác.</li>
+        <li><span class="letter">c</span> Kỹ thuật đảo ngược, tháo rời, dịch ngược, giảm mã đối tượng của các ứng dụng của chúng tôi về dạng mã nguồn, hoặc tạo (hoặc cố gắng tạo) các tác phẩm phái sinh dựa trên toàn bộ hoặc bất kỳ phần nào của ứng dụng, trừ khi được pháp luật hiện hành cho phép.</li>
+        <li><span class="letter">d</span> Phân phối, cấp phép phụ, chuyển nhượng, chia sẻ, sử dụng chung thời gian (timeshare), bán, cho thuê, cho thuê tài chính, cấp quyền bảo đảm, sử dụng cho mục đích dịch vụ văn phòng, hoặc chuyển nhượng các ứng dụng của chúng tôi hoặc quyền sử dụng ứng dụng của bạn bằng bất kỳ cách nào khác.</li>
+        <li><span class="letter">e</span> Loại bỏ, sửa đổi, chặn, vô hiệu hóa, làm mờ hoặc làm suy yếu bất kỳ thông báo bản quyền, nhãn hiệu hoặc các thông báo sở hữu, tài liệu hoặc quảng cáo nào khác thuộc về chúng tôi, các bên cấp phép của chúng tôi hoặc bên thứ ba khác có chứa trong ứng dụng của chúng tôi.</li>
+        <li><span class="letter">f</span> Kết hợp các ứng dụng của chúng tôi vào một dịch vụ hoặc trang web khác hoặc cung cấp chúng thông qua khung (framing) hoặc gương (mirrors).</li>
+        <li><span class="letter">g</span> Trích xuất bất kỳ dữ liệu hoặc siêu dữ liệu nào từ ứng dụng của chúng tôi, hoặc tạo bất kỳ chỉ mục hoặc cơ sở dữ liệu nào kết hợp bất kỳ phần nào của dữ liệu đó.</li>
+        <li><span class="letter">h</span> Thực hiện bất kỳ hành động nào có thể gây hư hại cho các ứng dụng của chúng tôi.</li>
+        <li><span class="letter">i</span> Thực hiện bất kỳ hoạt động có hại hoặc bất hợp pháp nào bằng cách sử dụng các ứng dụng của chúng tôi.</li>
+        <li><span class="letter">j</span> Sử dụng các ứng dụng của chúng tôi theo bất kỳ cách nào không được các Điều khoản này cho phép rõ ràng.</li>
+      </ul>
+      <p>Nếu vi phạm, bạn sẽ phải bồi thường cho chúng tôi về bất kỳ tổn thất nào (bao gồm cả phí pháp lý) mà chúng tôi phải chịu do hành vi vi phạm trên.</p>
+    </section>
+
+    <section id="ip">
+      <h2>4. Quyền sở hữu trí tuệ</h2>
+      <p>Chúng tôi giữ toàn bộ quyền sở hữu độc quyền đối với các ứng dụng, nội dung ứng dụng và tài liệu liên quan trên toàn thế giới thuộc về chúng tôi và các bên cấp phép của chúng tôi.</p>
+      <p>Các ứng dụng của chúng tôi được bảo vệ bởi luật bản quyền, nhãn hiệu và các luật khác. Quyền sở hữu trí tuệ của chúng tôi không được phép sử dụng liên quan đến bất kỳ sản phẩm hoặc dịch vụ nào nếu không có sự đồng ý trước bằng văn bản của chúng tôi. Việc bán, sửa đổi, phân phối, sao chép, tái tạo, truyền tải, hiển thị công khai, tạo tác phẩm phái sinh hoặc sử dụng cho mục đích thương mại đối với các ứng dụng của chúng tôi hoặc nội dung của các bên cấp phép đều không được phép.</p>
+    </section>
+
+    <section id="thirdparty">
+      <h2>5. Liên kết đến bên thứ ba</h2>
+      <p>Bạn thừa nhận rằng các ứng dụng của chúng tôi có thể chứa các liên kết đến các trang web của bên thứ ba (cho dù thông qua quảng cáo hoặc cách khác) không thuộc sở hữu hoặc kiểm soát của chúng tôi. Các liên kết này chỉ được cung cấp để hỗ trợ trải nghiệm người dùng của bạn. Chúng tôi không kiểm soát các trang web đó và không chịu trách nhiệm về nội dung hoặc việc bạn sử dụng chúng.</p>
+      <p>Bằng việc truy cập nội dung đó, bạn thừa nhận những điều sau:</p>
+      <ol class="list">
+        <li>Bạn có trách nhiệm xem xét và tuân thủ các điều khoản cấp phép hiện hành (ví dụ: Giấy phép MIT) quản lý các tài nguyên được liên kết.</li>
+        <li>Chúng tôi không chịu trách nhiệm đối với việc bạn sử dụng các tài nguyên của bên thứ ba hoặc bất kỳ khiếu nại nào có thể phát sinh do bạn không tuân thủ các yêu cầu cấp phép của họ.</li>
+      </ol>
+    </section>
+
+    <section id="advertising">
+      <h2>6. Quảng cáo</h2>
+      <p>Các ứng dụng của chúng tôi có thể hiển thị quảng cáo do các mạng quảng cáo và đối tác bên thứ ba cung cấp, bao gồm nhưng không giới hạn ở Google AdMob. Những quảng cáo này được tạo và phục vụ bởi bên thứ ba dựa trên các thuật toán và chính sách nội dung của riêng họ. Chúng tôi <strong>không có quyền kiểm soát biên tập</strong> đối với việc quảng cáo cụ thể nào được phục vụ cho bất kỳ người dùng nào tại bất kỳ thời điểm nào, và chúng tôi không tạo, viết, thiết kế hoặc kiểm duyệt trước các quảng cáo riêng lẻ trước khi chúng được hiển thị.</p>
+      <p>Theo đó:</p>
+      <ul class="restriction-list">
+        <li><span class="letter">a</span> Chúng tôi không chịu trách nhiệm về tính chính xác, tính hợp pháp hoặc tính phù hợp của bất kỳ nội dung, sản phẩm hoặc dịch vụ nào được quảng cáo.</li>
+        <li><span class="letter">b</span> Chúng tôi không chịu trách nhiệm đối với bất kỳ giao dịch, liên lạc hoặc tương tác nào bạn có thể có với nhà quảng cáo, hoặc với bất kỳ trang web nào truy cập thông qua quảng cáo.</li>
+        <li><span class="letter">c</span> Do sự đa dạng của cơ sở người dùng toàn cầu, một số quảng cáo đôi khi có thể phản ánh nội dung, sản phẩm hoặc thông điệp không phù hợp với các giá trị tôn giáo, văn hóa hoặc cá nhân của một số người dùng, bao gồm nhưng không giới hạn ở các giá trị và nguyên tắc Hồi giáo. Chúng tôi không tán thành, chọn lọc hoặc có ý định hiển thị nội dung như vậy, và chúng tôi từ chối mọi trách nhiệm — tôn giáo, đạo đức hoặc bất kỳ vấn đề nào khác — phát sinh từ các quảng cáo do mạng quảng cáo bên thứ ba hiển thị.</li>
+        <li><span class="letter">d</span> Chúng tôi thực hiện các biện pháp hợp lý và khả thi về mặt kỹ thuật — bao gồm chặn danh mục nội dung và cài đặt xếp hạng nội dung quảng cáo tối đa do đối tác quảng cáo cung cấp — để giảm khả năng hiển thị các quảng cáo không phù hợp hoặc gây khó chịu. Tuy nhiên, các biện pháp này là các bộ lọc được áp dụng ở cấp độ nền tảng và không thể đảm bảo loại trừ hoàn toàn bất kỳ loại nội dung cụ thể nào, vì việc lựa chọn quảng cáo cuối cùng vẫn nằm dưới sự kiểm soát tự động của mạng bên thứ ba.</li>
+        <li><span class="letter">e</span> Bằng cách chọn tiếp tục sử dụng phiên bản ứng dụng hiển thị quảng cáo của bên thứ ba, bạn thừa nhận và chấp nhận rằng các quảng cáo đó nằm ngoài quyền kiểm soát biên tập của chúng tôi. Nếu bạn không muốn tiếp xúc với quảng cáo của bên thứ ba, <strong>Mua gói Gỡ bỏ Quảng cáo Trọn đời</strong> được mô tả trong Mục 7 luôn sẵn sàng cho bạn bất cứ lúc nào.</li>
+        <li><span class="letter">f</span> Nếu bạn gặp phải quảng cáo mà bạn cho là không phù hợp hoặc gây khó chịu, vui lòng liên hệ với chúng tôi để chúng tôi có thể báo cáo cho các đối tác quảng cáo của mình.</li>
+      </ul>
+      <div class="callout">
+        Người dùng muốn trải nghiệm không quảng cáo có thể sử dụng <strong>Mua gói Gỡ bỏ Quảng cáo Trọn đời</strong> được mô tả trong Mục 7.
+      </div>
+    </section>
+
+    <section id="purchase">
+      <h2>7. Mua gói Gỡ bỏ Quảng cáo Trọn đời</h2>
+      <span class="feature-tag">Mua hàng trong ứng dụng</span>
+      <p>Một gói mua hàng một lần có sẵn trong ứng dụng giúp loại bỏ tất cả quảng cáo và mở khóa các tính năng cao cấp bị khóa. Chi phí được chi tiết trên trang mua hàng trong ứng dụng. Sau khi mua, bạn sẽ có quyền truy cập trọn đời vào trải nghiệm không quảng cáo và các tính năng đã mở khóa đi kèm với gói mua này.</p>
+      <div class="callout">
+        <strong>Lưu ý:</strong>
+        <ul style="margin-top:8px;">
+          <li>Gói mua trọn đời không định kỳ và không cần gia hạn.</li>
+          <li>Gói mua này gắn liền với tài khoản Google Play Store của bạn và không thể chuyển nhượng sang các tài khoản hoặc hệ thống khác. Nó chỉ có hiệu lực trên các thiết bị Android liên kết với tài khoản mua hàng.</li>
+          <li>Việc hoàn tiền cho các gói mua trọn đời tuân theo chính sách hoàn tiền của Google Play Store. Vui lòng xem xét các chính sách của họ để biết điều kiện và hướng dẫn.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="transfer">
+      <h2>8. Chuyển nhượng</h2>
+      <p>Chúng tôi có thể chuyển nhượng các quyền và nghĩa vụ của mình theo các Điều khoản này cho một tổ chức khác. Chúng tôi sẽ luôn thông báo cho bạn và đảm bảo rằng việc chuyển nhượng sẽ không ảnh hưởng đến quyền lợi của bạn theo các Điều khoản này.</p>
+    </section>
+
+    <section id="termination">
+      <h2>9. Chấm dứt</h2>
+      <p>Các Điều khoản này có hiệu lực từ thời điểm bạn bắt đầu và vẫn giữ nguyên giá trị trong khi bạn sử dụng các ứng dụng của chúng tôi, cho đến khi bị chấm dứt theo Mục 8 này.</p>
+      <p>Chúng tôi có thể chấm dứt hoặc tạm ngưng việc sử dụng ứng dụng của bạn ngay lập tức, mà không cần thông báo trước hoặc chịu trách nhiệm pháp lý, vì bất kỳ lý do gì, bao gồm nhưng không giới hạn nếu bạn vi phạm thỏa thuận này. Bạn có thể chấm dứt các điều khoản này bằng cách ngừng sử dụng các ứng dụng của chúng tôi và xóa hoặc gỡ cài đặt chúng khỏi thiết bị của bạn. Tuy nhiên, ngay cả sau khi thỏa thuận này chấm dứt, các mục sau đây vẫn sẽ tiếp tục áp dụng: 4, 5, 6, 8, 9 và 10.</p>
+    </section>
+
+    <section id="liability">
+      <h2>10. Trách nhiệm pháp lý</h2>
+      <p>Chúng tôi giới hạn tổng trách nhiệm pháp lý đối với các thiệt hại trực tiếp phát sinh từ hoặc liên quan đến các điều khoản này, đối với bạn, liên quan đến tất cả các sự kiện xảy ra trong bất kỳ năm dương lịch nào — dù trong hợp đồng, ngoài hợp đồng (bao gồm sơ suất), vi phạm nghĩa vụ pháp lý, hoặc cách khác — ở mức 100% số phí bạn đã trả và phải trả cho chúng tôi liên quan đến ứng dụng trong năm dương lịch đó.</p>
+      <div class="strong-notice">
+        CÁC ỨNG DỤNG CỦA CHÚNG TÔI CHỈ DÀNH CHO MỤC ĐÍCH SỬ DỤNG GIA ĐÌNH VÀ CÁ NHÂN. NẾU BẠN SỬ DỤNG CÁC ỨNG DỤNG CỦA CHÚNG TÔI CHO BẤT KỲ MỤC ĐÍCH THƯƠNG MẠI, KINH DOANH HOẶC BÁN LẠI NÀO, CHÚNG TÔI SẼ KHÔNG CHỊU TRÁCH NHIỆM VỚI BẠN VỀ BẤT KỲ KHOẢN MẤT MÁT LỢI NHUẬN, MẤT MÁT KINH DOANH, GIÁN ĐOẠN KINH DOANH HOẶC MẤT CƠ HỘI KINH DOANH NÀO.
+      </div>
+    </section>
+
+    <section id="privacy">
+      <h2>11. Chính sách Bảo mật</h2>
+      <p>Việc bảo vệ thông tin cá nhân của bạn là vấn đề vô cùng quan trọng đối với chúng tôi. Ngoài các điều khoản này, chúng tôi cũng đã công bố Chính sách Bảo mật. Mặc dù nó không phải là một phần của các điều khoản này, chúng tôi khuyến khích bạn đọc nó để hiểu rõ hơn cách bạn có thể cập nhật, quản lý, xuất và xóa thông tin của mình.</p>
+    </section>
+
+    <section id="voodoo">
+      <h2>12. Chế độ Voodoo Tùy chọn</h2>
+      <span class="feature-tag">Tính năng Tùy chọn</span>
+      <p>Ứng dụng của chúng tôi bao gồm một <strong>Chế độ Voodoo</strong> tùy chọn — một chủ đề tối độc đáo, được các nghệ sĩ thiết kế, giúp biến đổi giao diện ứng dụng với các yếu tố hình ảnh và âm thanh hơi hướng kinh dị, chỉ dành cho mục đích giải trí và thẩm mỹ. Chế độ này hoàn toàn tùy chọn, bị vô hiệu hóa theo mặc định và không dành cho trẻ nhỏ hoặc những người dùng có thể nhạy cảm với hình ảnh hoặc âm thanh gây khó chịu.</p>
+      <div class="callout warn">
+        <strong>Lưu ý:</strong> Bằng cách chọn bật Chế độ Voodoo, bạn thừa nhận tính chất nội dung của nó và chấp nhận trách nhiệm khi sử dụng. Phụ huynh và người giám hộ nên xác định xem chế độ này có phù hợp hay không trước khi cho phép trẻ vị thành niên bật nó.
+      </div>
+    </section>
+
+    <section id="disclaimers">
+      <h2>13. Tuyên bố từ chối trách nhiệm và Bảo hành</h2>
+      <p>Trừ khi được trình bày trong Thỏa thuận này, các dịch vụ và phần mềm được cung cấp <strong>"NGUYÊN TRẠNG" (AS-IS)</strong>. Mặc dù chúng tôi nỗ lực hết sức để giữ cho dịch vụ của mình an toàn và chính xác, chúng tôi từ chối tất cả các bảo đảm, dù rõ ràng hay ngụ ý, bao gồm các bảo đảm ngụ ý về không vi phạm, khả năng thương mại và sự phù hợp cho một mục đích cụ thể. Chúng tôi không cam kết gì về nội dung trong các dịch vụ.</p>
+      <p>Chúng tôi cũng từ chối mọi bảo đảm rằng:</p>
+      <ol class="list">
+        <li>Các dịch vụ hoặc phần mềm sẽ đáp ứng yêu cầu của bạn hoặc sẽ luôn sẵn sàng, không bị gián đoạn, kịp thời, an toàn hoặc không có lỗi;</li>
+        <li>Kết quả thu được từ việc sử dụng các dịch vụ hoặc phần mềm sẽ hiệu quả, chính xác hoặc đáng tin cậy;</li>
+        <li>Chất lượng của các dịch vụ hoặc phần mềm sẽ đáp ứng kỳ vọng của bạn;</li>
+        <li>Bất kỳ lỗi hoặc khiếm khuyết nào trong dịch vụ hoặc phần mềm sẽ được khắc phục; hoặc</li>
+        <li>Dịch vụ, máy chủ, nội dung hoặc email được gửi từ hoặc nhân danh chúng tôi không chứa virus, tập lệnh, trojan, worm, phần mềm độc hại, timebomb hoặc các thành phần gây hại khác.</li>
+      </ol>
+    </section>
+
+    <section id="general">
+      <h2>14. Quy định chung</h2>
+      <p>Nếu bất kỳ điều khoản nào trong các điều khoản này bị tòa án có thẩm quyền coi là không hợp lệ, sự không hợp lệ đó sẽ không ảnh hưởng đến tính hợp lệ của các điều khoản còn lại của các Điều khoản và Điều kiện này, những điều khoản còn lại sẽ vẫn giữ nguyên giá trị và hiệu lực.</p>
+      <p>Tất cả hoặc bất kỳ tranh chấp nào phát sinh từ, liên quan đến, hoặc liên quan đến các điều khoản của Thỏa thuận này — bao gồm việc giải thích và tính hợp lệ của các điều khoản đó và các quyền và nghĩa vụ tương ứng của các bên — sẽ được giải quyết một cách hòa giải thông qua thảo luận chung, nếu không thành, tranh chấp sẽ được giải quyết thông qua tòa án có thẩm quyền tại nơi cư trú của bị đơn để tìm kiếm giải pháp.</p>
+      <p>Nếu bạn có bất kỳ câu hỏi nào về nội dung của thỏa thuận này, hoặc cần gửi phản hồi cho chúng tôi trong quá trình sử dụng, bạn có thể liên hệ với chúng tôi tại địa chỉ:
+        <a class="inline" href="mailto:havisionary.support@gmail.com">havisionary.support@gmail.com</a>.
+      </p>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  © 2026 HA VISIONARY — Spectra Flashlight. Bảo lưu mọi quyền.
+</footer>
+
+</body>
+</html>
