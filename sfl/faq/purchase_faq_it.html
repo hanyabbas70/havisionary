@@ -58,7 +58,7 @@
   }
   .search-hint{
     display:flex;
-    align-items:center;
+    align-items:flex-start;
     gap:10px;
     background:var(--accent-light);
     border:1px solid #dbe7fe;
@@ -67,8 +67,16 @@
     margin-bottom:28px;
     font-size:14px;
     color:#1e40af;
+    min-width:0;
   }
-  .search-hint svg{ flex-shrink:0; }
+  .search-hint svg{
+    flex-shrink:0;
+    margin-top:2px;
+  }
+  .search-hint a{
+    overflow-wrap:anywhere;
+    word-break:break-word;
+  }
   .faq-list{
     display:flex;
     flex-direction:column;
@@ -168,7 +176,6 @@
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
     Tocca una domanda qui sotto per leggere la risposta. Hai ancora problemi? Contattaci all'indirizzo <a href="mailto:havisionary.support@gmail.com" style="color:#1e40af;font-weight:600;">havisionary.support@gmail.com</a>.
   </div>
-
   <div class="faq-list" id="faqList">
 
     <div class="faq-item">
