@@ -127,19 +127,20 @@
     transform:rotate(180deg);
     color:var(--accent);
   }
-  .faq-answer-wrap{
-    max-height:0;
-    overflow:hidden;
-    transition:max-height .25s ease;
-  }
-  .faq-item.open .faq-answer-wrap{
-    max-height:300px;
-  }
-  .faq-answer{
-    padding:0 64px 20px 20px;
-    font-size:14.5px;
-    color:#4b5563;
-  }
+.faq-answer-wrap{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height .25s ease;
+}
+.faq-item.open .faq-answer-wrap{
+  max-height:1000px; /* ← كان 300px */
+}
+.faq-answer{
+  padding:0 64px 20px 20px;
+  font-size:14.5px;
+  color:#4b5563;
+  white-space: pre-line; /* ← جديد */
+}
   footer{
     text-align:center;
     padding:30px 20px 50px;
