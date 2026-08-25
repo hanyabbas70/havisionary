@@ -58,9 +58,10 @@
     box-shadow:0 10px 40px rgba(0,0,0,0.12);
     padding:36px 32px 44px;
   }
+
   .search-hint{
     display:flex;
-    align-items:center;
+    align-items:flex-start;
     gap:10px;
     background:var(--accent-light);
     border:1px solid #dbe7fe;
@@ -68,9 +69,28 @@
     padding:14px 18px;
     margin-bottom:28px;
     font-size:14px;
+    line-height:1.5;
     color:#1e40af;
   }
-  .search-hint svg{ flex-shrink:0; }
+
+  .search-hint svg{
+    flex:0 0 20px;
+    width:20px;
+    height:20px;
+    margin-top:1px;
+  }
+
+  .search-hint-text{
+    flex:1;
+    min-width:0;
+  }
+
+  .search-hint-text a{
+    color:#1e40af;
+    font-weight:600;
+    overflow-wrap:anywhere;
+  }
+
   .faq-list{
     display:flex;
     flex-direction:column;
@@ -135,7 +155,7 @@
     transition:max-height .25s ease;
   }
   .faq-item.open .faq-answer-wrap{
-    max-height:300px;
+    max-height:1500px;
   }
   .faq-answer{
     padding:0 64px 20px 20px;
@@ -149,9 +169,34 @@
     font-size:13px;
   }
   footer a{ color:var(--accent); text-decoration:none; }
+
   @media (max-width:640px){
     .container{ padding:28px 20px 36px; }
     header h1{ font-size:26px; }
+
+    .search-hint{
+      padding:11px 12px;
+      gap:8px;
+      font-size:13.5px;
+      line-height:1.45;
+    }
+
+    .search-hint svg{
+      flex:0 0 18px;
+      width:18px;
+      height:18px;
+      margin-top:1px;
+    }
+
+    .search-hint-text{
+      min-width:0;
+    }
+
+    .search-hint-text a{
+      overflow-wrap:anywhere;
+      word-break:break-word;
+    }
+
     .faq-answer{ padding-right:20px; }
   }
 </style>
@@ -163,7 +208,6 @@
   <h1>خریداری کے سوالات</h1>
   <p>پرو ورژن کی خریداری کے بارے میں وہ سب کچھ جو آپ کو جاننے کی ضرورت ہے</p>
 </header>
-
 <div class="container">
 
   <div class="search-hint">
